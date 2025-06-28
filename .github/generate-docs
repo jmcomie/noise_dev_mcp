@@ -43,11 +43,28 @@ jobs:
   
     - name: Install only doc deps
       run: uv sync --only-group docs
+
+    - name: Get repo info and stream into mkdocs.yaml
+      id: repo_info
+      run: |
+        REPO_INFO=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/${{ github.repository }})
+        REPO_URL="${{ github.server_url }}/${{ github.repository }}"
+        REPO_URL=$(echo ${REPO_URL} | sed 's|/|\\/|g')
+        SITE_NAME=$(sed '1!d' README.md | sed '0,/# /{s/# //}')
+        SITE_DESC=$(echo $REPO_INFO | jq -r .description)
+        sed -i "s/<gha_sed_repo_url_here>/${REPO_URL}/g" mkdocs.yaml
+        sed -i "s/<gha_sed_site_name_here>/${SITE_NAME}/g" mkdocs.yaml
+        sed -i "s/<gha_sed_site_description_here>/${SITE_DESC}/g" mkdocs.yaml
     
     - name: Copy text files to be included
       run: |
         mkdir -p "${DOC_DIR}"
         cp README.md "${DOC_DIR}/index.md"
+        cp LICENSE "${DOC_DIR}/LICENSE.md"
+        # cp CHANGELOG.md "${DOC_DIR}"
+        # cp PRD.md "${DOC_DIR}"
 
     - name: Generate code docstrings concat file
       run: |
