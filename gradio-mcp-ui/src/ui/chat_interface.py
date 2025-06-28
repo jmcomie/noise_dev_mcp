@@ -136,6 +136,26 @@ class ChatInterface:
         }
         """
         
+        # Create mapping between display names and technical names
+        self.server_display_mapping = {
+            "Example Server": "example",
+            "News Server": "news_server", 
+            "Military Server": "military_server",
+            "Government Server": "government_server"
+        }
+        
+        # Reverse mapping for technical to display names
+        self.server_technical_mapping = {v: k for k, v in self.server_display_mapping.items()}
+        
+        def get_display_names(self):
+            """Get user-friendly display names for servers."""
+            technical_names = self.mcp_manager.list_servers()
+            return [self.server_technical_mapping.get(name, name.title().replace('_', ' ')) for name in technical_names]
+        
+        def get_technical_name(self, display_name):
+            """Convert display name to technical name."""
+            return self.server_display_mapping.get(display_name, display_name.lower().replace(' ', '_'))
+        
         with gr.Blocks(title="🤖 Professional MCP Chat Interface", css=custom_css, theme=gr.themes.Soft()) as interface:
             # Professional Header
             gr.HTML("""
@@ -157,11 +177,12 @@ class ChatInterface:
                 with gr.Column(scale=1):
                     gr.Markdown("## 🖥️ **Server Management**")
                     
-                    # Server selector
+                    # Server selector with user-friendly names
+                    display_names = get_display_names(self)
                     server_dropdown = gr.Dropdown(
-                        label="🎯 Select MCP Server",
-                        choices=self.mcp_manager.list_servers(),
-                        value=self.mcp_manager.list_servers()[0] if self.mcp_manager.list_servers() else None,
+                        label="🎯 Select MCP Server", 
+                        choices=display_names,
+                        value=display_names[0] if display_names else None,
                         interactive=True
                     )
                     
@@ -298,9 +319,9 @@ class ChatInterface:
             generated_articles = gr.State([])
             
             # Event handlers
-            async def connect_server(server_name):
+            async def connect_server(server_display_name):
                 """Connect to selected server."""
-                if not server_name:
+                if not server_display_name:
                     return (
                         '<div class="server-status-disconnected">❌ No server selected</div>', 
                         {}, 
@@ -309,6 +330,9 @@ class ChatInterface:
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
+                
+                # Convert display name to technical name
+                server_name = get_technical_name(self, server_display_name)
                 
                 try:
                     success = await self.mcp_manager.connect_server(server_name)
@@ -371,8 +395,8 @@ class ChatInterface:
                         tool_status = f'<span class="tool-ready">✅ {len(tools)} Tools Ready</span>' if tools else '<span class="tool-unavailable">⚠️ No Tools</span>'
                         resource_status = f'<span class="resource-available">📄 {len(resources)} Resources</span>' if resources else '<span class="tool-unavailable">⚠️ No Resources</span>'
                         
-                        # Return beautiful connected status
-                        connected_status = f'<div class="server-status-connected">🟢 Connected to {server_name}</div>'
+                        # Return beautiful connected status with display name
+                        connected_status = f'<div class="server-status-connected">🟢 Connected to {server_display_name}</div>'
                         return (
                             connected_status, 
                             detailed_info, 
@@ -404,9 +428,9 @@ class ChatInterface:
                         '<span class="tool-unavailable">⚠️ Error</span>'
                     )
             
-            async def disconnect_server(server_name):
+            async def disconnect_server(server_display_name):
                 """Disconnect from selected server."""
-                if not server_name:
+                if not server_display_name:
                     return (
                         '<div class="server-status-disconnected">❌ No server selected</div>', 
                         {}, 
@@ -415,6 +439,9 @@ class ChatInterface:
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
+                
+                # Convert display name to technical name
+                server_name = get_technical_name(self, server_display_name)
                 
                 try:
                     # Add timeout to prevent hanging
@@ -489,25 +516,34 @@ class ChatInterface:
                     
                     # Mathematical operations - prefer servers with math tools
                     if any(word in message_lower for word in ['calculate', 'add', 'subtract', 'multiply', 'divide', 'math', 'equation', 'formula']):
-                        if 'mcpserver1' in server_name or 'example' in server_name:
+                        if 'news_server' in server_name or 'example' in server_name:
                             score += 30
                             reasons.append("Mathematical operations detected - primary math server")
                         else:
                             score += 20
                             reasons.append("Mathematical operations detected")
                     
-                    # Military/Defense operations - MCPServer2 specialization
+                    # News operations - News Server specialization
+                    if any(word in message_lower for word in ['news', 'article', 'headline', 'report', 'journalism', 'media', 'press', 'story', 'publication', 'breaking', 'update']):
+                        if 'news_server' in server_name:
+                            score += 40
+                            reasons.append("News query - specialized news server with AI analysis")
+                        else:
+                            score += 5
+                            reasons.append("News content detected but server not specialized")
+                    
+                    # Military/Defense operations - Military Server specialization
                     if any(word in message_lower for word in ['military', 'defense', 'combat', 'weapon', 'tactical', 'strategy', 'war', 'army', 'navy', 'force', 'mission', 'operation', 'security', 'threat']):
-                        if 'mcpserver2' in server_name:
+                        if 'military_server' in server_name:
                             score += 40
                             reasons.append("Military/Defense query - specialized military server")
                         else:
                             score += 5
                             reasons.append("Military content detected but server not specialized")
                     
-                    # Civil Government operations - MCPServer3 specialization
+                    # Civil Government operations - Government Server specialization
                     if any(word in message_lower for word in ['government', 'policy', 'public', 'regulation', 'civic', 'administration', 'law', 'legal', 'citizen', 'service', 'bureau', 'department', 'federal', 'state']):
-                        if 'mcpserver3' in server_name:
+                        if 'government_server' in server_name:
                             score += 40
                             reasons.append("Civil Government query - specialized government server")
                         else:
@@ -539,7 +575,7 @@ class ChatInterface:
                     
                     # Complex AI/OpenAI operations
                     if any(word in message_lower for word in ['analyze', 'explain', 'generate', 'creative', 'story', 'summary', 'ai']):
-                        if 'mcpserver1' in server_name:
+                        if 'news_server' in server_name:
                             score += 35
                             reasons.append("AI/Creative task - primary OpenAI-integrated server")
                         else:
@@ -547,8 +583,8 @@ class ChatInterface:
                             reasons.append("AI/Creative task detected")
                     
                     # Load balancing - prefer appropriate servers for general queries
-                    if not any(word in message_lower for word in ['calculate', 'time', 'random', 'dice', 'ai', 'generate', 'military', 'defense', 'government', 'policy']):
-                        if 'mcpserver1' in server_name:
+                    if not any(word in message_lower for word in ['calculate', 'time', 'random', 'dice', 'ai', 'generate', 'military', 'defense', 'government', 'policy', 'news']):
+                        if 'news_server' in server_name:
                             score += 15
                             reasons.append("General query - primary general purpose server")
                         elif 'example' in server_name:
@@ -590,7 +626,7 @@ class ChatInterface:
                 
                 return selected_server, reason_text, confidence
 
-            async def send_message(message, history, server_name):
+            async def send_message(message, history, server_display_name):
                 """Process and send a message with intelligent server selection."""
                 if not message:
                     return history, ""
@@ -609,8 +645,11 @@ class ChatInterface:
                 actual_server = selected_server
                 server = self.mcp_manager.get_server(actual_server)
                 
+                # Get display name for selected server
+                selected_display_name = self.server_technical_mapping.get(selected_server, selected_server.title().replace('_', ' '))
+                
                 if not server or not server.connected:
-                    history = history + [{"role": "assistant", "content": f"❌ Selected server '{actual_server}' is not connected."}]
+                    history = history + [{"role": "assistant", "content": f"❌ Selected server '{selected_display_name}' is not connected."}]
                     return history, ""
                 
                 # Create transparent server selection explanation
@@ -619,7 +658,7 @@ class ChatInterface:
 🤖 **Intelligent Server Selection**
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-{confidence_emoji[confidence]} **Selected Server**: `{actual_server}`
+{confidence_emoji[confidence]} **Selected Server**: `{selected_display_name}`
 📋 **Selection Reason**: {selection_reason}
 📊 **Confidence Level**: {confidence.title()}
 🔄 **Process**: Analyzed query → Matched capabilities → Selected optimal server
