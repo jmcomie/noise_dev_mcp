@@ -301,7 +301,9 @@ class ChatInterface:
                 if not server_name:
                     return (
                         '<div class="server-status-disconnected">❌ No server selected</div>', 
-                        {}, [], [], 
+                        {}, 
+                        gr.update(choices=[], value=None), 
+                        gr.update(choices=[], value=None), 
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
@@ -359,7 +361,7 @@ class ChatInterface:
                             }
                         }
                         
-                        # Update dropdowns
+                        # Update dropdowns with proper Gradio updates
                         tool_choices = [t["name"] for t in tools]
                         resource_choices = [r["uri"] for r in resources]
                         
@@ -369,13 +371,22 @@ class ChatInterface:
                         
                         # Return beautiful connected status
                         connected_status = f'<div class="server-status-connected">🟢 Connected to {server_name}</div>'
-                        return connected_status, detailed_info, tool_choices, resource_choices, tool_status, resource_status
+                        return (
+                            connected_status, 
+                            detailed_info, 
+                            gr.update(choices=tool_choices, value=tool_choices[0] if tool_choices else None), 
+                            gr.update(choices=resource_choices, value=resource_choices[0] if resource_choices else None), 
+                            tool_status, 
+                            resource_status
+                        )
                     else:
                         server = self.mcp_manager.get_server(server_name)
                         error = server.last_error if server else "Unknown error"
                         error_status = f'<div class="server-status-disconnected">❌ Failed to connect: {error}</div>'
                         return (
-                            error_status, {}, [], [], 
+                            error_status, {}, 
+                            gr.update(choices=[], value=None), 
+                            gr.update(choices=[], value=None), 
                             '<span class="tool-unavailable">⚠️ Connection Failed</span>',
                             '<span class="tool-unavailable">⚠️ Connection Failed</span>'
                         )
@@ -384,7 +395,9 @@ class ChatInterface:
                     logger.error(f"Connection error: {e}")
                     exception_status = f'<div class="server-status-disconnected">❌ Error: {str(e)}</div>'
                     return (
-                        exception_status, {}, [], [], 
+                        exception_status, {}, 
+                        gr.update(choices=[], value=None), 
+                        gr.update(choices=[], value=None), 
                         '<span class="tool-unavailable">⚠️ Error</span>',
                         '<span class="tool-unavailable">⚠️ Error</span>'
                     )
@@ -394,7 +407,9 @@ class ChatInterface:
                 if not server_name:
                     return (
                         '<div class="server-status-disconnected">❌ No server selected</div>', 
-                        {}, [], [], 
+                        {}, 
+                        gr.update(choices=[], value=None), 
+                        gr.update(choices=[], value=None), 
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
@@ -407,7 +422,9 @@ class ChatInterface:
                     )
                     disconnected_status = '<div class="server-status-disconnected">🔴 Disconnected</div>'
                     return (
-                        disconnected_status, {}, [], [], 
+                        disconnected_status, {}, 
+                        gr.update(choices=[], value=None), 
+                        gr.update(choices=[], value=None), 
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
@@ -423,7 +440,9 @@ class ChatInterface:
                         pass
                     timeout_status = '<div class="server-status-disconnected">🔴 Disconnected (timeout)</div>'
                     return (
-                        timeout_status, {}, [], [], 
+                        timeout_status, {}, 
+                        gr.update(choices=[], value=None), 
+                        gr.update(choices=[], value=None), 
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
@@ -439,7 +458,9 @@ class ChatInterface:
                         pass
                     error_status = f'<div class="server-status-disconnected">🔴 Disconnected (error: {str(e)})</div>'
                     return (
-                        error_status, {}, [], [], 
+                        error_status, {}, 
+                        gr.update(choices=[], value=None), 
+                        gr.update(choices=[], value=None), 
                         '<span class="tool-unavailable">⚠️ No Tools</span>',
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
