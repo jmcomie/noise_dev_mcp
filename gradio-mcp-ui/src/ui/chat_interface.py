@@ -214,6 +214,7 @@ class ChatInterface:
                                 label="Select Tool",
                                 choices=[],
                                 interactive=True,
+                                allow_custom_value=True,
                                 scale=3
                             )
                             with gr.Column(scale=1):
@@ -235,6 +236,7 @@ class ChatInterface:
                                 label="Select Resource",
                                 choices=[],
                                 interactive=True,
+                                allow_custom_value=True,
                                 scale=3
                             )
                             with gr.Column(scale=1):
