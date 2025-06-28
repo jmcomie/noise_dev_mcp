@@ -1,0 +1,34 @@
+# MCP Server Configuration
+# This file defines the MCP servers available to the Gradio UI
+
+mcpServers:
+  # Example local server (Python script)
+  example:
+    command: python
+    args: ["./servers/example_server.py"]
+    env:
+      PYTHONPATH: "."
+  
+  # Example of a remote HTTP server (commented out)
+  # weather:
+  #   url: https://weather-api.example.com/mcp
+  #   transport: http
+  #   headers:
+  #     Authorization: Bearer ${WEATHER_API_TOKEN}
+  
+  # Example of an SSE server (commented out)
+  # assistant:
+  #   url: http://localhost:8000/sse
+  #   transport: sse
+  
+  # Example of a Node.js server (commented out)
+  # node_server:
+  #   command: node
+  #   args: ["./servers/node_server.js"]
+  
+  # Example with authentication (commented out)
+  # secure_server:
+  #   url: https://api.example.com/mcp/
+  #   auth: oauth
+  #   headers:
+  #     X-API-Key: ${API_KEY}

@@ -1,0 +1,1 @@
+# UI package for Gradio MCP interface
