@@ -467,24 +467,195 @@ class ChatInterface:
                         '<span class="tool-unavailable">⚠️ No Resources</span>'
                     )
             
+            def analyze_query_and_select_server(message: str) -> Tuple[str, str, str]:
+                """
+                Analyze user query and intelligently select the best MCP server.
+                Returns: (selected_server, reason, confidence)
+                """
+                message_lower = message.lower()
+                available_servers = [s for s in self.mcp_manager.list_servers() 
+                                   if self.mcp_manager.get_server(s) and self.mcp_manager.get_server(s).connected]
+                
+                if not available_servers:
+                    return "", "No servers available", "low"
+                
+                # Priority system for server selection
+                server_scores = {}
+                selection_reasons = {}
+                
+                for server_name in available_servers:
+                    score = 0
+                    reasons = []
+                    
+                    # Mathematical operations - prefer servers with math tools
+                    if any(word in message_lower for word in ['calculate', 'add', 'subtract', 'multiply', 'divide', 'math', 'equation', 'formula']):
+                        if 'mcpserver1' in server_name or 'example' in server_name:
+                            score += 30
+                            reasons.append("Mathematical operations detected - primary math server")
+                        else:
+                            score += 20
+                            reasons.append("Mathematical operations detected")
+                    
+                    # Military/Defense operations - MCPServer2 specialization
+                    if any(word in message_lower for word in ['military', 'defense', 'combat', 'weapon', 'tactical', 'strategy', 'war', 'army', 'navy', 'force', 'mission', 'operation', 'security', 'threat']):
+                        if 'mcpserver2' in server_name:
+                            score += 40
+                            reasons.append("Military/Defense query - specialized military server")
+                        else:
+                            score += 5
+                            reasons.append("Military content detected but server not specialized")
+                    
+                    # Civil Government operations - MCPServer3 specialization
+                    if any(word in message_lower for word in ['government', 'policy', 'public', 'regulation', 'civic', 'administration', 'law', 'legal', 'citizen', 'service', 'bureau', 'department', 'federal', 'state']):
+                        if 'mcpserver3' in server_name:
+                            score += 40
+                            reasons.append("Civil Government query - specialized government server")
+                        else:
+                            score += 5
+                            reasons.append("Government content detected but server not specialized")
+                    
+                    # Time/Date operations
+                    if any(word in message_lower for word in ['time', 'date', 'timezone', 'clock', 'when', 'schedule']):
+                        if 'example' in server_name:
+                            score += 25
+                            reasons.append("Time-related query - example server has time tools")
+                        else:
+                            score += 15
+                            reasons.append("Time-related query")
+                    
+                    # Random/Dice operations
+                    if any(word in message_lower for word in ['random', 'dice', 'roll', 'chance', 'probability', 'luck']):
+                        if 'example' in server_name:
+                            score += 25
+                            reasons.append("Random/dice operations - example server has dice tools")
+                        else:
+                            score += 15
+                            reasons.append("Random operations detected")
+                    
+                    # Echo/Text operations
+                    if any(word in message_lower for word in ['echo', 'repeat', 'say', 'text', 'message', 'uppercase', 'lowercase']):
+                        score += 20
+                        reasons.append("Text processing operations")
+                    
+                    # Complex AI/OpenAI operations
+                    if any(word in message_lower for word in ['analyze', 'explain', 'generate', 'creative', 'story', 'summary', 'ai']):
+                        if 'mcpserver1' in server_name:
+                            score += 35
+                            reasons.append("AI/Creative task - primary OpenAI-integrated server")
+                        else:
+                            score += 25
+                            reasons.append("AI/Creative task detected")
+                    
+                    # Load balancing - prefer appropriate servers for general queries
+                    if not any(word in message_lower for word in ['calculate', 'time', 'random', 'dice', 'ai', 'generate', 'military', 'defense', 'government', 'policy']):
+                        if 'mcpserver1' in server_name:
+                            score += 15
+                            reasons.append("General query - primary general purpose server")
+                        elif 'example' in server_name:
+                            score += 10
+                            reasons.append("General query - example server available")
+                    
+                    # Server availability bonus
+                    server = self.mcp_manager.get_server(server_name)
+                    if server and server.connected:
+                        score += 10
+                        reasons.append("Server active and responsive")
+                        
+                        # Tool availability bonus
+                        if hasattr(server, 'tools') and server.tools:
+                            score += len(server.tools) * 2
+                            reasons.append(f"{len(server.tools)} tools available")
+                    
+                    server_scores[server_name] = score
+                    selection_reasons[server_name] = reasons
+                
+                # Select server with highest score
+                if not server_scores:
+                    return available_servers[0], "Default selection - no scoring criteria met", "low"
+                
+                best_server = max(server_scores.items(), key=lambda x: x[1])
+                selected_server = best_server[0]
+                score = best_server[1]
+                reasons = selection_reasons[selected_server]
+                
+                # Determine confidence level
+                if score >= 40:
+                    confidence = "high"
+                elif score >= 20:
+                    confidence = "medium" 
+                else:
+                    confidence = "low"
+                
+                reason_text = "; ".join(reasons) if reasons else "General purpose selection"
+                
+                return selected_server, reason_text, confidence
+
             async def send_message(message, history, server_name):
-                """Process and send a message."""
-                if not message or not server_name:
+                """Process and send a message with intelligent server selection."""
+                if not message:
                     return history, ""
                 
                 # Add user message to history
                 history = history + [{"role": "user", "content": message}]
                 
-                # Check if server is connected
-                server = self.mcp_manager.get_server(server_name)
-                if not server or not server.connected:
-                    history = history + [{"role": "assistant", "content": f"❌ Server '{server_name}' is not connected."}]
+                # Intelligent server selection
+                selected_server, selection_reason, confidence = analyze_query_and_select_server(message)
+                
+                if not selected_server:
+                    history = history + [{"role": "assistant", "content": "❌ No MCP servers are currently connected. Please connect to a server first."}]
                     return history, ""
                 
-                # Enhanced response with server info
-                tools_list = ", ".join([t.name for t in server.tools])
-                response = f"[{server_name}] Received: {message}\n\n🛠️ Available tools: {tools_list}\n📄 Resources: {len(server.resources)} available"
-                history = history + [{"role": "assistant", "content": response}]
+                # Override manual selection with intelligent selection for transparency
+                actual_server = selected_server
+                server = self.mcp_manager.get_server(actual_server)
+                
+                if not server or not server.connected:
+                    history = history + [{"role": "assistant", "content": f"❌ Selected server '{actual_server}' is not connected."}]
+                    return history, ""
+                
+                # Create transparent server selection explanation
+                confidence_emoji = {"high": "🎯", "medium": "🤔", "low": "⚠️"}
+                selection_display = f"""
+🤖 **Intelligent Server Selection**
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+{confidence_emoji[confidence]} **Selected Server**: `{actual_server}`
+📋 **Selection Reason**: {selection_reason}
+📊 **Confidence Level**: {confidence.title()}
+🔄 **Process**: Analyzed query → Matched capabilities → Selected optimal server
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+"""
+                
+                # Enhanced response with server info and capabilities
+                tools_list = ", ".join([t.name for t in server.tools]) if hasattr(server, 'tools') and server.tools else "None"
+                resources_count = len(server.resources) if hasattr(server, 'resources') and server.resources else 0
+                
+                # Simulate tool execution or response based on message content
+                response_content = ""
+                message_lower = message.lower()
+                
+                if "add" in message_lower and any(char.isdigit() for char in message):
+                    response_content = "\n🧮 **Math Operation Detected** - Ready to execute addition tool"
+                elif "time" in message_lower:
+                    response_content = "\n⏰ **Time Query Detected** - Ready to provide current time"
+                elif "dice" in message_lower or "roll" in message_lower:
+                    response_content = "\n🎲 **Dice Operation Detected** - Ready to roll dice"
+                elif "echo" in message_lower:
+                    response_content = "\n📢 **Echo Command Detected** - Ready to echo message"
+                elif any(word in message_lower for word in ["analyze", "explain", "generate", "ai"]):
+                    response_content = "\n🧠 **AI Task Detected** - Ready for OpenAI-powered analysis"
+                else:
+                    response_content = f"\n💬 **General Query** - Server ready to assist"
+                
+                full_response = f"""{selection_display}
+🛠️ **Available Tools**: {tools_list}
+📄 **Resources**: {resources_count} available
+{response_content}
+
+Ready to process your request using the selected server!"""
+                
+                history = history + [{"role": "assistant", "content": full_response}]
                 
                 return history, ""
             
@@ -562,7 +733,7 @@ class ChatInterface:
                     # Create temporary directory for dataset generation
                     with tempfile.TemporaryDirectory() as temp_dir:
                         # Look for the generator script
-                        generator_script = os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "generateNewsDataset.js")
+                        generator_script = os.path.join(os.path.dirname(__file__), "..", "..", "..", "generateNewsDataset.js")
                         
                         if os.path.exists(generator_script):
                             # Run the news generator with custom parameters

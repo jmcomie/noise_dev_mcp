@@ -2,6 +2,7 @@
 
 const fs = require('fs-extra');
 const path = require('path');
+const { generateMixedDataset } = require('./generateNewsDataset');
 
 /**
  * Example script showing how to load and analyze the mixed news dataset
@@ -231,4 +232,37 @@ if (require.main === module) {
   main().catch(console.error);
 }
 
-module.exports = { loadDataset, analyzeDataset, mcpTools }; 
+async function runExamples() {
+    console.log('🚀 News Dataset Generator - Example Usage\n');
+    
+    try {
+        // Example 1: Technology news with default settings
+        console.log('📱 Example 1: Technology News (Default Settings)');
+        await generateMixedDataset('technology', 30, 80);
+        
+        console.log('\n' + '='.repeat(50) + '\n');
+        
+        // Example 2: AI news with high fake percentage
+        console.log('🤖 Example 2: AI News (High Fake Percentage)');
+        await generateMixedDataset('artificial intelligence', 25, 60);
+        
+        console.log('\n' + '='.repeat(50) + '\n');
+        
+        // Example 3: Politics news with low fake percentage
+        console.log('🏛️ Example 3: Politics News (Low Fake Percentage)');
+        await generateMixedDataset('politics', 20, 90);
+        
+        console.log('\n✅ All examples completed successfully!');
+        
+    } catch (error) {
+        console.error('❌ Error running examples:', error.message);
+        process.exit(1);
+    }
+}
+
+// Run examples if called directly
+if (require.main === module) {
+    runExamples();
+}
+
+module.exports = { loadDataset, analyzeDataset, mcpTools, runExamples }; 

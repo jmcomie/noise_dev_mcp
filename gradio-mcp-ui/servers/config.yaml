@@ -2,33 +2,39 @@
 # This file defines the MCP servers available to the Gradio UI
 
 mcpServers:
-  # Example local server (Python script)
+  # Original example server
   example:
     command: python
     args: ["./servers/example_server.py"]
     env:
       PYTHONPATH: "."
+    description: "Original Python example server with basic tools (add, multiply, dice, time, echo)"
+    category: "example"
+    specialties: ["math", "dice", "time", "text", "basic"]
   
-  # Example of a remote HTTP server (commented out)
-  # weather:
-  #   url: https://weather-api.example.com/mcp
-  #   transport: http
-  #   headers:
-  #     Authorization: Bearer ${WEATHER_API_TOKEN}
+  # MCPServer1 - Primary General Purpose Server
+  mcpserver1:
+    url: http://localhost:3000/api/v1
+    transport: http
+    description: "MCPServer1 - Primary general purpose server with OpenAI integration for complex AI tasks"
+    category: "production"
+    capabilities: ["chat", "tools", "resources", "prompts"]
+    specialties: ["general", "math", "utility", "openai", "ai", "creative", "analysis"]
   
-  # Example of an SSE server (commented out)
-  # assistant:
-  #   url: http://localhost:8000/sse
-  #   transport: sse
+  # MCPServer2 - Military & Defense Specialized Server  
+  mcpserver2:
+    url: http://localhost:3001/api/v1
+    transport: http
+    description: "MCPServer2-Defense - Military and defense specialization with combat simulation and weapon analysis"
+    category: "specialized"
+    capabilities: ["chat", "tools", "resources", "prompts"]
+    specialties: ["military", "defense", "combat", "weapons", "tactics", "security", "simulation"]
   
-  # Example of a Node.js server (commented out)
-  # node_server:
-  #   command: node
-  #   args: ["./servers/node_server.js"]
-  
-  # Example with authentication (commented out)
-  # secure_server:
-  #   url: https://api.example.com/mcp/
-  #   auth: oauth
-  #   headers:
-  #     X-API-Key: ${API_KEY}
+  # MCPServer3 - Civil Government Specialized Server
+  mcpserver3:
+    url: http://localhost:3002/api/v1
+    transport: http
+    description: "MCPServer3-CivGov - Civil government specialization with policy analysis and public services"
+    category: "specialized"
+    capabilities: ["chat", "tools", "resources", "prompts"]
+    specialties: ["government", "policy", "public", "regulation", "civic", "administration", "services"]

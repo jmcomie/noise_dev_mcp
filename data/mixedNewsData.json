@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2025-06-28T21:48:51.320Z",
-    "total_articles": 50,
-    "real_articles": 40,
+    "generated_at": "2025-06-28T23:26:41.261Z",
+    "total_articles": 49,
+    "real_articles": 39,
     "fake_articles": 10,
     "topic": "technology",
     "real_percentage": 80,
@@ -10,504 +10,868 @@
   },
   "articles": [
     {
-      "title": "DRAMATIC: Ancient civilization found in modern city - You Won't Believe What Happens Next!",
-      "description": "Tersus quos denego argentum amplitudo suppellex audio. Vestrum termes vaco thorax temperantia tyrannus. This shocking revelation has sources baffled. Abundans aedificium stultus modi aeneus demonstro.",
-      "publishedAt": "2025-06-22T20:36:15.589Z",
-      "url": "http://exclusivereports.com/solum-sumptus-conturbo",
+      "title": "URGENT: technology WARNING issued - government hiding the truth!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-11681372-5df1-426d-85f7-f8dacdfbef4f",
       "source": {
-        "name": "Daily Flash Updates"
+        "name": "Underground Reports",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-28T12:52:16.192Z",
+      "author": "Concerned Citizen",
+      "urlToImage": "https://picsum.photos/800/600?random=1004",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "'M3GAN 2.0' review: More camp, more kills, less chills",
-      "description": "Your favorite killer doll's favorite killer doll is back.",
-      "publishedAt": "2025-06-27T21:26:04Z",
-      "url": "https://www.out.com/film/m3gan-2-review",
+      "title": "JKR told to intensify use of tech in road projects",
+      "description": "KAPIT: The Public Works Department (JKR) has been urged to intensify the use of modern technologies in major projects such as the Pan Borneo Highway and rural road construction. Read full story",
+      "url": "https://www.thestar.com.my/news/nation/2025/06/28/jkr-told-to-intensify-use-of-tech-in-road-projects",
       "source": {
-        "name": "Out.com"
+        "name": "The Star Online",
+        "url": "https://www.thestar.com.my/news/nation/2025/06/28/jkr-told-to-intensify-use-of-tech-in-road-projects"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:00:00Z",
+      "author": "The Star Online",
+      "urlToImage": "https://apicms.thestar.com.my/uploads/images/2025/06/28/3389367.jpg",
+      "content": "KAPIT: The Public Works Department (JKR) has been urged to intensify the use of modern technologies in major projects such as the Pan Borneo Highway and rural road construction.\r\nWorks Minister Datuk… [+902 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Bigger bitcoin HODL: Time for 10% to 40% of portfolio in crypto, says financial advisor Ric Edelman",
-      "description": "Financial advisor Ric Edelman recommends financial advisors hold from 10% to 40% of a portfolio in crypto including bitcoin.",
-      "publishedAt": "2025-06-27T21:01:33Z",
-      "url": "https://www.cnbc.com/2025/06/27/bitcoin-hodl-ric-edelman-wants-10percent-40percent-portfolio-crypto.html",
+      "title": "Creativity & Technological Evolution",
+      "description": "This series of posts explores how we can rethink the intersection of AI, creativity, and policy. From examining outdated regulatory metaphors to questioning copyright norms and highlighting the risks of stifling innovation, each post addresses a different pie…",
+      "url": "https://www.techdirt.com/2025/06/27/creativity-technological-evolution/",
       "source": {
-        "name": "CNBC"
+        "name": "Techdirt",
+        "url": "https://www.techdirt.com/2025/06/27/creativity-technological-evolution/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:36:23Z",
+      "author": "Mike Masnick",
+      "urlToImage": "https://www.techdirt.com/wp-content/themes/techdirt/assets/images/td-rect-logo-white.png",
+      "content": "from the the-creativity-survived dept\r\nThis series of posts explores how we can rethink the intersection of AI, creativity, and policy. From examining outdated regulatory metaphors to questioning cop… [+3660 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "M3gan 2.0’s Ending Is Shameful Pro-AI Propaganda",
-      "description": "The ending of ‘M3gan 2.0’ is shameful pro-AI propaganda. It’s like if Sarah Connor ended ‘Terminator 2’ by asking, ‘Is Skynet really that bad, anyway?’",
-      "publishedAt": "2025-06-27T21:45:59Z",
-      "url": "http://www.vulture.com/article/m3gan-2-0s-ending-explained-brazen-pro-ai-propaganda.html",
+      "title": "Congo and Rwanda sign a US-mediated peace deal aimed at ending decades of bloody conflict",
+      "description": "Secretary of State Marco Rubio called it “an important moment after 30 years of war.”",
+      "url": "https://www.bostonherald.com/2025/06/27/congo-rwanda-peace-agreement/",
       "source": {
-        "name": "Vulture"
+        "name": "Boston Herald",
+        "url": "https://www.bostonherald.com/2025/06/27/congo-rwanda-peace-agreement/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:36:06Z",
+      "author": "Associated Press",
+      "urlToImage": "https://www.bostonherald.com/wp-content/uploads/2025/06/AP25178747453551.jpg?w=1024&h=683",
+      "content": "By CHINEDU ASADU, MATTHEW LEE and ELLEN KNICKMEYER\r\nWASHINGTON (AP) The Democratic Republic of Congo and Rwanda on Friday signed a peace deal facilitated by the U.S. to help end the decadeslong deadl… [+7645 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "UPDATE -- Gemini to List Dinari’s Tokenized U.S. Equities, Bringing Access to European Investors",
-      "description": "Gemini to List Dinari’s Tokenized U.S. Equities, Bringing Access to European Investors......",
-      "publishedAt": "2025-06-27T21:43:00Z",
-      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106863/0/en/UPDATE-Gemini-to-List-Dinari-s-Tokenized-U-S-Equities-Bringing-Access-to-European-Investors.html",
+      "title": "Trump halts trade talks with Canada, shattering optimism over tariff deals",
+      "description": "The move came just hours after U.S. Treasury Secretary Scott Bessent struck an upbeat tone on trade, saying deals could be reached by Sept. 1.",
+      "url": "https://www.japantimes.co.jp/business/2025/06/28/economy/trump-canada-tariff-deals/",
       "source": {
-        "name": "GlobeNewswire"
+        "name": "The Japan Times",
+        "url": "https://www.japantimes.co.jp/business/2025/06/28/economy/trump-canada-tariff-deals/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:13:00Z",
+      "author": "The Japan Times",
+      "urlToImage": "https://www.japantimes.co.jp/japantimes/uploads/images/2025/06/28/477926.jpg?v=3.1",
+      "content": "Washington U.S. President Donald Trump abruptly cut off trade talks with Canada on Friday over its tax targeting U.S. technology firms, saying that it was a \"blatant attack\" and that he would set a n… [+568 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Adidas Don Issue 7 Core Black / Lucid Orange",
-      "description": "The Adidas DON Issue 7 in Core Black and Lucid Orange is a striking addition to Donovan Mitchell's signature sneaker line. This model continues to blend functionality with a bold aesthetic, embodying the dynamic essence of Mitchell’s on-court prowess. The \"Co…",
-      "publishedAt": "2025-06-27T21:04:21Z",
-      "url": "https://www.kicksonfire.com/adidas-don-issue-7-core-black-lucid-orange",
+      "title": "Casino Welcome Bonuses 2025: SlotoCash Adds New Welcome Bonus",
+      "description": "SlotoCash is unleashing a new welcome bonus, designed with care and passion to offer new gamers a warm welcome as they begin their online gaming journey. SlotoCash is unleashing a new welcome bonus, designed with care and passion to offer new gamers a warm we…",
+      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106873/0/en/Casino-Welcome-Bonuses-2025-SlotoCash-Adds-New-Welcome-Bonus.html",
       "source": {
-        "name": "KicksOnFire.com"
+        "name": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2025/06/27/3106873/0/en/Casino-Welcome-Bonuses-2025-SlotoCash-Adds-New-Welcome-Bonus.html"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:19:00Z",
+      "author": "SlotoCash",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/ef2286c9-12df-418e-a770-30c82c4702a8",
+      "content": "New York, June 27, 2025 (GLOBE NEWSWIRE) -- \r\nSlotoCash is out to create a feeling beyond just numbers; it's about ensuring that each player feels appreciated and valued right from the outset. The ne… [+8930 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "What Do Meta and Anthropic’s ‘Fair Use’ Wins Mean for A.I. Copyright Cases?",
-      "description": "Judges ruled in favor of Meta and Anthropic over fair use in A.I. training, but future cases may hinge on market harm to creators.",
-      "publishedAt": "2025-06-27T21:01:07Z",
-      "url": "https://observer.com/2025/06/meta-anthropic-fair-use-wins-ai-copyright-cases/",
+      "title": "The Future Is 6G: What to Expect and When to Expect It",
+      "description": "6G's arrival is not exactly right around the corner, but it's coming, and it will bring a ton of improvements along with it.",
+      "url": "https://www.androidheadlines.com/6g-what-to-expect",
       "source": {
-        "name": "Observer"
+        "name": "Android Headlines",
+        "url": "https://www.androidheadlines.com/6g-what-to-expect"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:00:36Z",
+      "author": "Kristijan Lucic",
+      "urlToImage": "https://www.androidheadlines.com/wp-content/uploads/2025/06/6G-Gemini-AI-image-4-scaled.jpg",
+      "content": "Nowadays, were constantly connected to the Internet, whether it be from Wi-Fi at our house, public Wi-Fi, or through mobile data. Well, that mobile data comes from 5G for most of you, which is the fi… [+10628 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "SEE 2081 Result Out: 61.81% Pass Rate with Khumjung School’s Stunning 100% Success!",
-      "description": "The air in Nepal was thick with anticipation, finally giving way to relief and...",
-      "publishedAt": "2025-06-27T21:44:33Z",
-      "url": "https://nep123.com/see-2081-result-out-61-81-pass-rate-with-khumjung-schools-stunning-100-success/",
+      "title": "Fed Chair Powell Says AI Is Coming For Your Job",
+      "description": "Federal Reserve Chair Jerome Powell told the U.S. Senate that while AI hasn't yet dramatically impacted the economy or labor market, its transformative effects are inevitable -- though the timeline remains uncertain. The Register reports: Speaking to the US S…",
+      "url": "https://news.slashdot.org/story/25/06/27/2044239/fed-chair-powell-says-ai-is-coming-for-your-job",
       "source": {
-        "name": "Nep123.com"
+        "name": "Slashdot.org",
+        "url": "https://news.slashdot.org/story/25/06/27/2044239/fed-chair-powell-says-ai-is-coming-for-your-job"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:00:00Z",
+      "author": "BeauHD",
+      "urlToImage": "https://a.fsdn.com/sd/topics/ai_64.png",
+      "content": "Speaking to the US Senate Banking Committee on Wednesday to give his semiannual monetary policy report, Powell told elected officials that AI's effect on the economy to date is \"probably not great\" y… [+1126 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Affirm uses Snowflake Open Catalog to enhance FinTech services",
-      "description": "The margin for error in financial technology is razor thin, a fact of which Affirm Inc. is well aware. That’s why the company has relied on Snowflake Inc.’s Open Catalog offering, alongside Apache Iceberg. The Iceberg format has already allowed Affirm to shor…",
-      "publishedAt": "2025-06-27T21:41:59Z",
-      "url": "https://siliconangle.com/2025/06/27/affirm-fintech-snowflake-open-catalog-snowflakesummit/",
+      "title": "This Humanoid Robot Can Lift 220 Pounds But Has Super-Sensitive Skin",
+      "description": "The 4NE-1 humanoid robot is powerful but also sensitive: able to lift more than any other humanoid robot I’ve seen, but also able to sense human touch.",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2025/06/27/this-humanoid-robot-can-lift-220-pounds-but-has-super-sensitive-skin/",
       "source": {
-        "name": "SiliconANGLE News"
+        "name": "Forbes",
+        "url": "https://www.forbes.com/sites/johnkoetsier/2025/06/27/this-humanoid-robot-can-lift-220-pounds-but-has-super-sensitive-skin/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:04:12Z",
+      "author": "John Koetsier, Senior Contributor, \n John Koetsier, Senior Contributor\n https://www.forbes.com/sites/johnkoetsier/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/685f0f76a7b4a27b5bdcf53c/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "content": "Neura Robotics' CEO David Reger with the third-generation 4NE-1 humanoid robot\r\nNeura Robotics\r\nNeura Robotics officially unveiled the third generation of its 4NE-1 humanoid robot this week, along wi… [+5415 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Sink or Swim: Every Enterprise Conversation is AI Today. And Every Enterprise AI is Different.",
-      "description": "I spent this past week at the MaestrQA user conference with 200+ contact center and quality managers, where I’m on the board with SaaStr Fund. The attendee list read like a who’s who of both arguably more cutting-edge tech leaders—Brex, Oura Ring, Asana—and e…",
-      "publishedAt": "2025-06-27T21:46:34Z",
-      "url": "https://www.saastr.com/every-enterprise-conversation-is-ai-today-and-every-enterprise-ai-is-different/",
+      "title": "‘M3GAN 2.0’ Got The Blessing Of Steven Seagal And A Selfless Kate Bush",
+      "description": "Writer-director Gerard Johnstone explains why he needed the approval of the action star and iconic singer and the amazing thing she did with her fee.",
+      "url": "https://www.forbes.com/sites/simonthompson/2025/06/27/m3gan-20-got-the-blessing-of-steven-seagal-and-a-selfless-kate-bush/",
       "source": {
-        "name": "Saastr.com"
+        "name": "Forbes",
+        "url": "https://www.forbes.com/sites/simonthompson/2025/06/27/m3gan-20-got-the-blessing-of-steven-seagal-and-a-selfless-kate-bush/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:33:31Z",
+      "author": "Simon Thompson, Contributor, \n Simon Thompson, Contributor\n https://www.forbes.com/sites/simonthompson/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/685f027b0cfcf33869f66b25/0x0.jpg?format=jpg&crop=2774,1559,x0,y0,safe&height=900&width=1600&fit=bounds",
+      "content": "She's back! M3GAN in 'M3GAN 2.0'\r\nUniversal Pictures\r\nAfter M3GAN slayed at the box office in 2023, grossing $180 million worldwide against a $12 million budget, the studio greenlit a sequel. However… [+8947 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Fisherman Stumbles Upon Enormous Pre-Columbian Funeral Urns In The Brazilian Amazon",
-      "description": "The urns were buried 16 inches deep in a location where Indigenous people once created a series of artificial islands, but it's unclear which pre-Columbian culture put them there.\nThe post Fisherman Stumbles Upon Enormous Pre-Columbian Funeral Urns In The Bra…",
-      "publishedAt": "2025-06-27T21:45:47Z",
-      "url": "https://allthatsinteresting.com/brazilian-amazon-pre-columbian-funeral-urns",
+      "title": "Trump helped these African countries sign a peace deal. Here’s what we know",
+      "description": "A deal signed in Washington has been touted as a major step toward peace in Congo following decades of conflict that has killed millions, including thousands this year",
+      "url": "https://abcnews.go.com/International/wireStory/trump-helped-african-countries-sign-peace-deal-heres-123289718",
       "source": {
-        "name": "Allthatsinteresting.com"
+        "name": "ABC News",
+        "url": "https://abcnews.go.com/International/wireStory/trump-helped-african-countries-sign-peace-deal-heres-123289718"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:30:29Z",
+      "author": "CHINEDU ASADU Associated Press",
+      "urlToImage": "https://i.abcnewsfe.com/a/ba5c2626-0418-4a78-9a75-138ec5ceba8f/wirestory_f74d15074cbadf35bedf37316bc722a6_16x9.jpg?w=1600",
+      "content": "DAKAR, Senegal -- A deal signed in Washington on Friday has been touted as a major step toward peace in Congo following decades of conflict that has killed millions, including thousands this year.\r\nT… [+4670 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Florida's First Recreational Cannabis Dispensary Democratizes Legal Marijuana Access – THC Gummies, THCA Flower, & Weed Pens Now Available for Sale Statewide",
-      "description": "Area 52 is proud to be the first and only legal recreational cannabis dispensary in Florida Area 52 is proud to be the first and only legal recreational cannabis dispensary in Florida",
-      "publishedAt": "2025-06-27T21:11:00Z",
-      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106855/0/en/Florida-s-First-Recreational-Cannabis-Dispensary-Democratizes-Legal-Marijuana-Access-THC-Gummies-THCA-Flower-Weed-Pens-Now-Available-for-Sale-Statewide.html",
+      "title": "Retiree dodges scam by choosing to cook dinner",
+      "description": "A RETIREE in Hangzhou, China, narrowly avoided losing 1.66 million yuan (RM980,000) – by simply deciding to cook dinner. Read full story",
+      "url": "https://www.thestar.com.my/news/nation/2025/06/28/retiree-dodges-scam-by-choosing-to-cook-dinner",
       "source": {
-        "name": "GlobeNewswire"
+        "name": "The Star Online",
+        "url": "https://www.thestar.com.my/news/nation/2025/06/28/retiree-dodges-scam-by-choosing-to-cook-dinner"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:00:00Z",
+      "author": "The Star Online",
+      "urlToImage": "https://apicms.thestar.com.my/uploads/images/2025/06/28/3389378.jpg",
+      "content": "Compiled by BENJAMIN LEE, ALLISON LAI and R. ARAVINTHAN\r\nA RETIREE in Hangzhou, China, narrowly avoided losing 1.66 million yuan (RM980,000) by simply deciding to cook dinner.\r\nThe woman, known by he… [+1706 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Mark Hamill Says There’s No Beef With Rian Johnson Despite ‘Last Jedi’ Disagreement: He Made a ‘Great Movie’ and ‘Maybe I Should’ve Kept’ My Luke Skywalker Criticisms to Myself",
-      "description": "Mark Hamill recently appeared on the “Bullseye with Jesse Thorn” podcast (via IGN) to promote his latest movie, Mike Flanagan’s “The Life of Chuck,” and cleared up some of the confusion surrounding his thoughts on Rian Johnson’s divisive “Star Wars” movie, 20…",
-      "publishedAt": "2025-06-27T21:17:38Z",
-      "url": "https://variety.com/2025/film/news/mark-hamill-rian-johnson-despite-feud-last-jedi-not-true-1236442628/",
+      "title": "SCANDAL: technology industry LIES finally revealed!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-bde595d0-fa92-4e2e-bb6a-489923e2618f",
       "source": {
-        "name": "Variety"
+        "name": "Conspiracy Watch",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-23T02:57:53.346Z",
+      "author": "Former Insider",
+      "urlToImage": "https://picsum.photos/800/600?random=1002",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "Rwanda, Congo Sign Historic Peace Deal",
-      "description": "Decades of fighting have led to what the United Nations has called “one of the most protracted, complex, serious humanitarian crises on Earth.”",
-      "publishedAt": "2025-06-27T21:07:14Z",
-      "url": "http://foreignpolicy.com/2025/06/27/rwanda-congo-peace-deal-drc-m23-rebels-goma-trump/",
+      "title": "Ford CEO says new technologies like AI are leaving many workers behind, and companies need a plan",
+      "description": "Jim Farley said there needs to be a societal mindset shift, too, where society doesn't look down on blue collar workers.",
+      "url": "https://fortune.com/2025/06/27/ford-ceo-new-tech-ai-robotics-leaving-workers-behind-aspen-ideas-festival/",
       "source": {
-        "name": "Foreign Policy"
+        "name": "Fortune",
+        "url": "https://fortune.com/2025/06/27/ford-ceo-new-tech-ai-robotics-leaving-workers-behind-aspen-ideas-festival/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:37:32Z",
+      "author": "Jessica Mathews",
+      "urlToImage": "https://fortune.com/img-assets/wp-content/uploads/2025/06/GettyImages-2219966312.jpg?resize=1200,600",
+      "content": "For all the talk about how artificial intelligence is going to transform our daily lives, Ford CEO Jim Farley said that technological advances are leaving some people behind.Its the factory employees… [+2786 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "CRITICAL: Weather manipulation program confirmed - You Won't Believe What Happens Next!",
-      "description": "Pariatur sapiente aliquid repellendus demergo viscus. Culpo aspicio tubineus uter thymbra velit agnitio valens somnus inventore. This unprecedented revelation has insiders concerned. Vado utique cupiditas cruciamentum accusamus.",
-      "publishedAt": "2025-06-25T16:49:37.854Z",
-      "url": "http://truthblaster.com/tolero-candidus-cernuus",
+      "title": "PyroGenesis Reports Voting Results from 2025 Annual Meeting of Shareholders",
+      "description": "MONTREAL, June 27, 2025 (GLOBE NEWSWIRE) — PyroGenesis Inc. (“PyroGenesis”) ( (TSX: PYR) (OTCQX: PYRGF) (FRA: 8PY1), a high-tech company that designs, develops, manufactures and commercializes all-electric plasma processes and sustainable solutions to support…",
+      "url": "https://financialpost.com/globe-newswire/pyrogenesis-reports-voting-results-from-2025-annual-meeting-of-shareholders",
       "source": {
-        "name": "World Insider Reports"
+        "name": "Financial Post",
+        "url": "https://financialpost.com/globe-newswire/pyrogenesis-reports-voting-results-from-2025-annual-meeting-of-shareholders"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:00:38Z",
+      "author": "GlobeNewswire",
+      "urlToImage": null,
+      "content": "MONTREAL, June 27, 2025 (GLOBE NEWSWIRE) PyroGenesis Inc. (PyroGenesis) (http://pyrogenesis.com) (TSX: PYR) (OTCQX: PYRGF) (FRA: 8PY1), a high-tech company that designs, develops, manufactures and co… [+6172 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "URGENT: Government covers up alien contact - You Won't Believe What Happens Next!",
-      "description": "Vulticulus cupiditate conspergo illum tergum testimonium cauda via. Cura nostrum villa praesentium appositus toties colo temptatio cubitum. This groundbreaking revelation has officials speechless. Tolero xiphias cervus caelum defetiscor.",
-      "publishedAt": "2025-06-25T23:13:55.103Z",
-      "url": "http://truthblaster.com/admoneo-conforto-cotidie",
+      "title": "IDEX Biometrics appoints new Chief Financial Officer",
+      "description": "Oslo, Norway, 27 June 2025   IDEX Biometrics ASA (“IDEX” or the “Company”) announces that Kristian Flaten, Chief Financial Officer (CFO), has handed in...",
+      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106878/0/en/IDEX-Biometrics-appoints-new-Chief-Financial-Officer.html",
       "source": {
-        "name": "Breaking Point News"
+        "name": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2025/06/27/3106878/0/en/IDEX-Biometrics-appoints-new-Chief-Financial-Officer.html"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:55:00Z",
+      "author": "IDEX BIOMETRICS ASA",
+      "urlToImage": "https://ml-eu.globenewswire.com/Resource/Download/70082ac7-fecb-4ab0-ad5f-f1a34b80b949",
+      "content": "Oslo, Norway, 27 June 2025 \r\nIDEX Biometrics ASA (IDEX or the Company) announces that Kristian Flaten, Chief Financial Officer (CFO), has handed in his resignation as CFO to pursue other opportunitie… [+1348 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "EXCLUSIVE: Ancient civilization found in modern city - You Won't Believe What Happens Next!",
-      "description": "Temeritas crudelis tracto ustulo appono creber. Conscendo quos validus audax aduro adipisci vicinus alii vox catena. This controversial revelation has officials speechless. Animadverto copia cur facilis aurum deduco.",
-      "publishedAt": "2025-06-24T02:38:31.465Z",
-      "url": "http://fakenews247.com/tremo-videlicet-adficio",
+      "title": "BREAKING: technology causes MASSIVE changes - experts STUNNED!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-c0207eb6-2897-4cca-b658-a6c63e9e6a2a",
       "source": {
-        "name": "TruthSeeker News"
+        "name": "Freedom News Today",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-28T03:42:25.529Z",
+      "author": "Freedom Fighter",
+      "urlToImage": "https://picsum.photos/800/600?random=1008",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "8 Paid AI Tools vs Free Alternatives — Which Ones Are Really Worth Your Time (and Money)?",
-      "description": "Explore Paid AI Tools vs Free Alternatives to find the best AI for your workflow. Compare features, cost, and value to boost productivity.",
-      "publishedAt": "2025-06-27T21:45:02Z",
-      "url": "https://www.smashingapps.com/paid-ai-tools-vs-free-alternatives/",
+      "title": "NVIDIA acquires Canadian machine learning company CentML",
+      "description": "Canadian machine learning efficiency company CentML Inc. has been acquired by U.S. technology giant Nvidia Corporation, the latest Canadian-founded company to end up in American hands in recent weeks. \nThe Toronto-based company, co-founded by University of To…",
+      "url": "https://biztoc.com/x/4fe02456f08c6d1b",
       "source": {
-        "name": "Smashingapps.com"
+        "name": "Biztoc.com",
+        "url": "https://biztoc.com/x/4fe02456f08c6d1b"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:03:52Z",
+      "author": "theglobeandmail.com",
+      "urlToImage": "https://biztoc.com/cdn/4fe02456f08c6d1b_s.webp",
+      "content": "Canadian machine learning efficiency company CentML Inc. has been acquired by U.S. technology giant Nvidia Corporation, the latest Canadian-founded company to end up in American hands in recent weeks… [+147 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Scage International Limited and Finnovate Acquisition Corp. Announce Closing of Business Combination and Listing on Nasdaq",
-      "description": "BEIJING, June 27, 2025 (GLOBE NEWSWIRE) -- Scage International Limited (“Scage International” or the “Company”), a zero-emission solution provider of new energy heavy-duty commercial vehicles and e-fuel solutions, and Finnovate Acquisition Corp (“Finnovate”) …",
-      "publishedAt": "2025-06-27T21:17:00Z",
-      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106859/0/en/Scage-International-Limited-and-Finnovate-Acquisition-Corp-Announce-Closing-of-Business-Combination-and-Listing-on-Nasdaq.html",
+      "title": "Pineapples go from field to fortune",
+      "description": "JOHOR BARU: Malaysia's pineapple industry has grown into a billion-ringgit venture, with farmers earning up to RM9,000 a month, marking a major milestone in the country's agri-food success story. Read full story",
+      "url": "https://www.thestar.com.my/news/nation/2025/06/28/pineapples-go-from-field-to-fortune",
       "source": {
-        "name": "GlobeNewswire"
+        "name": "The Star Online",
+        "url": "https://www.thestar.com.my/news/nation/2025/06/28/pineapples-go-from-field-to-fortune"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:00:00Z",
+      "author": "MOHD FARHAAN SHAH",
+      "urlToImage": "https://apicms.thestar.com.my/uploads/images/2025/06/28/3389180.jpg",
+      "content": "JOHOR BARU: Malaysias pineapple industry has grown into a billion-ringgit venture, with farmers earning up to RM9,000 a month, marking a major milestone in the countrys agri-food success story.\r\nAgri… [+1785 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "The Disposable Camera: Photography's Greatest Democratic Revolution",
-      "description": "Before everyone became a photographer, there was a little yellow box that made everyone feel like one. Picture this: It's 1995, and you're standing in a CVS checkout line, grabbing a Kodak FunSaver on impulse because you're heading to a wedding tomorrow. No m…",
-      "publishedAt": "2025-06-27T21:03:01Z",
-      "url": "https://fstoppers.com/film/disposable-camera-photographys-greatest-democratic-revolution-704324",
+      "title": "How vulnerable is critical infrastructure to cyberattack in the US?",
+      "description": "Our water, health, and energy systems are increasingly vulnerable to cyberattack. Now, when tensions escalate - like when the US bombed nuclear facilities in Iran this month - the safety of these systems becomes of paramount concern. If conflict erupts, we ca…",
+      "url": "https://www.theverge.com/cyber-security/693588/cybersecurity-cyberattack-critical-infrastructure-war-expert-iran",
       "source": {
-        "name": "Fstoppers"
+        "name": "The Verge",
+        "url": "https://www.theverge.com/cyber-security/693588/cybersecurity-cyberattack-critical-infrastructure-war-expert-iran"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:31:35Z",
+      "author": "Justine Calma",
+      "urlToImage": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/akrales_220309_4977_0232.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+      "content": "We were always prey, but there are surprisingly simple solutions to safeguard hospitals, water facilities, and other critical infrastructure.\r\nOur water, health, and energy systems are increasingly v… [+9531 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "LEAKED: Celebrity secretly controls government - You Won't Believe What Happens Next!",
-      "description": "Sublime inflammatio voro conscendo voco verbera conatus vulgivagus nobis audeo. Uter curo compono tredecim. This controversial revelation has sources concerned. Torrens cetera uterque amaritudo tergiversatio congregatio.",
-      "publishedAt": "2025-06-22T02:56:32.060Z",
-      "url": "http://fakenews247.com/degenero-tolero-collum",
+      "title": "Train more doctors aims to strengthen national health system: official",
+      "description": "President Prabowo Subianto&rsquo;s directive to increase the number of doctors is aimed at strengthening Indonesia&rsquo;s national health system, a senior ...",
+      "url": "https://en.antaranews.com/news/362493/train-more-doctors-aims-to-strengthen-national-health-system-official",
       "source": {
-        "name": "Daily Flash Updates"
+        "name": "Antaranews.com",
+        "url": "https://en.antaranews.com/news/362493/train-more-doctors-aims-to-strengthen-national-health-system-official"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:41:36Z",
+      "author": "Muhammad Zulfikar, Raka Adji",
+      "urlToImage": "https://cdn.antaranews.com/cache/1200x800/2023/03/30/Screenshot_20230330_114947.jpg",
+      "content": "Padang, W Sumatra (ANTARA) - President Prabowo Subianto’s directive to increase the number of doctors is aimed at strengthening Indonesia’s national health system, a senior official has said.However,… [+1840 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "U.S., China announce a trade agreement - again. Here's what it means",
-      "description": "The U.S. and China have reached an agreement — again — to deescalate trade tensions.  Sudden shifts and a lack of clarity have been hallmarks of Trump's...",
-      "publishedAt": "2025-06-27T21:25:54Z",
-      "url": "https://finance.yahoo.com/news/u-china-announce-trade-agreement-212554922.html",
+      "title": "Over 20 lakh from tribal areas screened for sickle cell anaemia in past 8 years: CSIR DG",
+      "description": "NEW DELHI, June 27: More than 20 lakh people from tribal areas have been screened since we started the sickle cell anaemia project eight years back, said CSIR’s Director General Nallathamby Kalaiselvi, terming it among the institute’s more successful missions…",
+      "url": "https://thehillstimes.in/national/over-20-lakh-from-tribal-areas-screened-for-sickle-cell-anaemia-in-past-8-years-csir-dg",
       "source": {
-        "name": "Yahoo Entertainment"
+        "name": "Thehillstimes.in",
+        "url": "https://thehillstimes.in/national/over-20-lakh-from-tribal-areas-screened-for-sickle-cell-anaemia-in-past-8-years-csir-dg"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:05:00Z",
+      "author": "The Hills Times",
+      "urlToImage": "https://thehillstimes.in/wp-content/uploads/2025/06/Anchor-48.jpg",
+      "content": "NEW DELHI, June 27: More than 20 lakh people from tribal areas have been screened since we started the sickle cell anaemia project eight years back, said CSIRs Director General Nallathamby Kalaiselvi… [+3600 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Java Brain Releases 2025 Research Update on Coffee-Based Neuroinflammation Trends and Cognitive Wellness Support",
-      "description": "The 2025 update explores how evolving consumer interest in brain fog, coffee-enhanced wellness routines, and ingredient transparency is shaping the future of cognitive support. The 2025 update explores how evolving consumer interest in brain fog, coffee-enhan…",
-      "publishedAt": "2025-06-27T21:21:00Z",
-      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106861/0/en/Java-Brain-Releases-2025-Research-Update-on-Coffee-Based-Neuroinflammation-Trends-and-Cognitive-Wellness-Support.html",
+      "title": "Roborock Prime Day: Save big on upgraded Qrevo and Q Series robot vacuum-mops for a cool, clean summer",
+      "description": "Summer is here, and the last thing anyone wants is to think about cleaning floors in the sweltering heat. Fortunately, Roborock robot vacuum and mop solutions are coming to the rescue with groundbreaking innovation and incredible value. Now is the perfect tim…",
+      "url": "https://9to5mac.com/2025/06/27/roborock-prime-day-save-big-on-upgraded-qrevo-and-q-series-robot-vacuum-mops-for-a-cool-clean-summer/",
       "source": {
-        "name": "GlobeNewswire"
+        "name": "9to5Mac",
+        "url": "https://9to5mac.com/2025/06/27/roborock-prime-day-save-big-on-upgraded-qrevo-and-q-series-robot-vacuum-mops-for-a-cool-clean-summer/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:30:00Z",
+      "author": "Sponsored Post",
+      "urlToImage": "https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2025/06/Roborock-Prime-Day.jpeg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+      "content": "Summer is here, and the last thing anyone wants is to think about cleaning floors in the sweltering heat. Fortunately, Roborock robot vacuum and mop solutions are coming to the rescue with groundbrea… [+9276 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "OpenAI turns to Google's AI chips to power its products, source says",
-      "description": "OpenAI has recently begun renting Google's artificial intelligence chips to power ChatGPT and its other products, a source close to the matter told Reuters on Friday.The ChatGPT maker is one of the largest purchasers of Nvidia's graphics processing units (GPU…",
-      "publishedAt": "2025-06-27T21:26:22Z",
-      "url": "https://www.channelnewsasia.com/business/openai-turns-googles-ai-chips-power-its-products-source-says-5208501",
+      "title": "Fake IT insiders behind $1M in crypto losses across NFT protocols — ZackXBT",
+      "description": "Hackers posing as information technology workers compromised several Web3 and NFT projects this week, stealing approximately $1 million in crypto.",
+      "url": "https://cointelegraph.com/news/it-insiders-responsible-1-million-losses-week",
       "source": {
-        "name": "CNA"
+        "name": "Cointelegraph",
+        "url": "https://cointelegraph.com/news/it-insiders-responsible-1-million-losses-week"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:20:00Z",
+      "author": "Cointelegraph by Vince Quill",
+      "urlToImage": "https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1200/https://s3.cointelegraph.com/uploads/2025-06/0197b2f0-4f4b-7f11-86da-9854c53b0a53",
+      "content": "Hackers posing as legitimate information technology (IT) workers who have infiltrated Web3 projects have stolen roughly $1 million in crypto during the past week, according to onchain investigator an… [+2174 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "What Pro-AI Educators May Overlook About Education",
-      "description": "AI-powered tools can help students learn in unprecedented and incredible ways, but students’ prohibited use of AI might make reliable assessment of that learning an impossibility.",
-      "publishedAt": "2025-06-27T21:28:41Z",
-      "url": "https://www.psychologytoday.com/us/blog/bias-fundamentals/202506/what-pro-ai-educators-may-overlook-about-education",
+      "title": "Google’s New MUVERA Algorithm Improves Search via @sejournal, @martinibuster",
+      "description": "Google's multi-vector retrieval algorithm (MUVERA) speeds up search, is highly efficient and improves accuracy\nThe post Google’s New MUVERA Algorithm Improves Search appeared first on Search Engine Journal.",
+      "url": "https://www.searchenginejournal.com/googles-new-muvera-algorithm-improves-search/550070/",
       "source": {
-        "name": "Psychology Today"
+        "name": "Search Engine Journal",
+        "url": "https://www.searchenginejournal.com/googles-new-muvera-algorithm-improves-search/550070/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:02:21Z",
+      "author": "Roger Montti",
+      "urlToImage": "https://www.searchenginejournal.com/wp-content/uploads/2025/06/google-muvera-259.jpg",
+      "content": "Google announced a new multi-vector retrieval algorithm called MUVERA that speeds up retrieval and ranking, and improves accuracy. The algorithm can be used for search, recommender systems (like YouT… [+5594 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Budget Bill’s Ban on Regulation of Artificial Intelligence Draws States’ Ire",
-      "description": "Some Republican officials are sounding the alarm about a provision tucked into the Senate budget reconciliation bill that would potentially eviscerate state regulation of artificial... Read More\nThe post Budget Bill’s Ban on Regulation of Artificial Intellige…",
-      "publishedAt": "2025-06-27T21:15:53Z",
-      "url": "https://www.dailysignal.com/2025/06/27/budget-bills-ban-regulation-artificial-intelligence-draws-states-ire/",
+      "title": "Open-Ear Sports Headphones - JBL Endurance Zone Headphones Offer a Secure Fit (TrendHunter.com)",
+      "description": "(TrendHunter.com) The JBL Endurance Zone open-ear sports headphones are an athletic tech product developed with dynamic audio experiences in mind to keep athletes supported when training indoors or out.\n\nThe...",
+      "url": "https://www.trendhunter.com/trends/jbl-endurance-zone",
       "source": {
-        "name": "Daily Signal"
+        "name": "Trendhunter.com",
+        "url": "https://www.trendhunter.com/trends/jbl-endurance-zone"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:08:03Z",
+      "author": "Michael Hemsworth",
+      "urlToImage": "https://cdn.trendhunterstatic.com/thumbs/575/jbl-endurance-zone.jpeg",
+      "content": "The JBL Endurance Zone open-ear sports headphones are an athletic tech product developed with dynamic audio experiences in mind to keep athletes supported when training indoors or out.The headphones … [+606 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "adidas’ Ballet Flat Is Quiet Luxury, the Three-Stripes Way",
-      "description": "adidas releases its Stan Smith Lo Ballet, a ballet flat version of its iconic minimalist sneaker. Here's how to cop the colorways.",
-      "publishedAt": "2025-06-27T21:33:10Z",
-      "url": "https://www.highsnobiety.com/p/adidas-stan-smith-lo-ballet/",
+      "title": "VIRAL: Amazing technology discovery will change EVERYTHING!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-e8a63eed-9e4b-47f7-b341-d1936a60a07f",
       "source": {
-        "name": "Highsnobiety"
+        "name": "Hidden Truth Media",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-23T00:36:41.354Z",
+      "author": "Anonymous Whistleblower",
+      "urlToImage": "https://picsum.photos/800/600?random=1001",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "UNPRECEDENTED: Ancient civilization found in modern city - You Won't Believe What Happens Next!",
-      "description": "Terror stultus theca ars. Possimus depono vinum ventosus uberrime ustulo subnecto cupiditate. This shocking revelation has experts concerned. Caput carpo vehemens victus.",
-      "publishedAt": "2025-06-22T08:09:53.963Z",
-      "url": "http://newsflash365.com/magnam-vis-impedit",
+      "title": "SCANDAL: technology industry LIES finally revealed!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-bb8748f8-4aa6-40d9-bb54-4e2ece14db9f",
       "source": {
-        "name": "Breaking Point News"
+        "name": "Wake Up News",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-28T13:45:51.275Z",
+      "author": "Former Insider",
+      "urlToImage": "https://picsum.photos/800/600?random=1003",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "Peter Thiel on Whether He’s Ushering in the Antichrist: Um, Uhh, Buh, Um Uhh, th th, Uhhhh",
-      "description": "The billionaire seemed unprepared to answer the question.",
-      "publishedAt": "2025-06-27T21:00:47Z",
-      "url": "https://gizmodo.com/peter-thiel-on-whether-hes-ushering-in-the-antichrist-um-uhh-buh-um-uhh-th-th-uhhhh-2000621428",
+      "title": "AI is fuelling a new wave of border vigilantism in the US",
+      "description": "Petra Molnar details a disturbing new artificial intelligence platform - ICERAID.us - which \"offers cryptocurrency rewards to users who upload photos of 'suspicious activity' along the border.\"",
+      "url": "https://cyber.harvard.edu/story/2025-06/ai-fuelling-new-wave-border-vigilantism-us",
       "source": {
-        "name": "Gizmodo.com"
+        "name": "Harvard School of Engineering and Applied Sciences",
+        "url": "https://cyber.harvard.edu/story/2025-06/ai-fuelling-new-wave-border-vigilantism-us"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:33:28Z",
+      "author": "ebigelow",
+      "urlToImage": "https://cyber.harvard.edu/modules/custom/bkc_home/images/bkc_logo_social_share_default.jpg",
+      "content": "Petra Molnar details a disturbing new artificial intelligence platform - ICERAID.us - which \"offers cryptocurrency rewards to users who upload photos of 'suspicious activity' along the border.\" One o… [+195 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "US law firm Susman Godfrey defeats Trump executive order",
-      "description": "(Reuters) -A federal judge on Friday permanenently blocked a White House executive order against law firm Susman Godfrey, capping a string of court victories...",
-      "publishedAt": "2025-06-27T21:39:58Z",
-      "url": "https://www.yahoo.com/news/u-law-firm-susman-godfrey-213958649.html",
+      "title": "VIRAL: Amazing technology discovery will change EVERYTHING!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-27f79ff7-7850-4d60-8ebd-dfd279e7258f",
       "source": {
-        "name": "Yahoo Entertainment"
+        "name": "Truth Seekers Daily",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-23T20:19:39.780Z",
+      "author": "Independent Journalist",
+      "urlToImage": "https://picsum.photos/800/600?random=1007",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "Why Google Gemini AI's Latest Move May Be a Privacy Red Flag",
-      "description": "Gemini AI's changes regarding access to communication apps are generating controversy regarding potential privacy and data security risks.",
-      "publishedAt": "2025-06-27T21:35:02Z",
-      "url": "https://www.androidheadlines.com/2025/06/google-gemini-ai-data-access-privacy-issues.html",
+      "title": "SPY Adds $4.1B in Assets as Tariff Relief Drives Stock Rally",
+      "description": "- SPY led ETF inflows as the S&P 500 climbed close to reaching a new record. - VONG and VONV gained while VOO saw massive outflows.",
+      "url": "http://www.etf.com/sections/daily-etf-flows/spy-adds-41b-assets-tariff-relief-drives-stock-rally?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss",
       "source": {
-        "name": "Android Headlines"
+        "name": "Etf.com",
+        "url": "http://www.etf.com/sections/daily-etf-flows/spy-adds-41b-assets-tariff-relief-drives-stock-rally?utm_source=yahoo-finance&amp;utm_medium=rss&amp;utm_campaign=yahoo-finance-rss"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:15:00Z",
+      "author": "DJ Shaw",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/YvP8uIBNq6f1MTzS3TkZOA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/indexuniverse.com/f6741068d625afddfcdc0db6735b6a64",
+      "content": "The SPDR S&amp;P 500 ETF Trust (SPY) pulled in $4.1 billion Thursday, bringing its assets under management to nearly $625 billion, according to data provided by FactSet. The inflows came as the S&amp… [+4632 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Buying New Construction? Here’s How to Get the Best Price from a Builder",
-      "description": "Moving and unsure how much utilities will cost? Learn all about how to estimate utility costs when buying a house in this Redfin article.\nThe post Buying New Construction? Here’s How to Get the Best Price from a Builder appeared first on Redfin | Real Estate …",
-      "publishedAt": "2025-06-27T21:29:16Z",
-      "url": "https://www.redfin.com/blog/how-to-negotiate-new-home-price-with-builder/",
+      "title": "Data Defense Agents For People",
+      "description": "In the conversation around agentic AI, experts are seeing how different entities may be customized to represent the welfare of a human user.",
+      "url": "https://www.forbes.com/sites/johnwerner/2025/06/27/data-defense-agents-for-people/",
       "source": {
-        "name": "Redfin.com"
+        "name": "Forbes",
+        "url": "https://www.forbes.com/sites/johnwerner/2025/06/27/data-defense-agents-for-people/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:11:01Z",
+      "author": "John Werner, Contributor, \n John Werner, Contributor\n https://www.forbes.com/sites/johnwerner/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/685f158b6bf69bd61698873f/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "content": "SAN JOSE, CALIFORNIA - MARCH 18: A\r\nGetty Images\r\nIn a world where AI agents are everywhere, how do we ensure that people still have agency?\r\nOne idea thats surfacing, albeit in sort of a vague way, … [+7797 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "New Orleans City Council Considers Ordinance To Adopt Real-Time Facial Recognition Technology",
-      "description": "The New Orleans City Council is considering an ordinance that would allow the city's police department, in the name of fighting crime, to use real-time facial recognition technology to find and track people as they move about the city. As The Washington Post …",
-      "publishedAt": "2025-06-27T21:13:10Z",
-      "url": "https://biztoc.com/x/3244c5e30153694f",
+      "title": "APT Miner Launches Strategic Growth Initiative for Crypto Holders",
+      "description": "Transform Dormant Assets into Daily Income Through Secure, Green Cloud Mining — A New Era for Passive Crypto Returns Begins Transform Dormant Assets into Daily Income Through Secure, Green Cloud Mining — A New Era for Passive Crypto Returns Begins",
+      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106875/0/en/APT-Miner-Launches-Strategic-Growth-Initiative-for-Crypto-Holders.html",
       "source": {
-        "name": "Biztoc.com"
+        "name": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2025/06/27/3106875/0/en/APT-Miner-Launches-Strategic-Growth-Initiative-for-Crypto-Holders.html"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:25:00Z",
+      "author": "APT Miner",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/c477c285-4404-4192-9403-f7082e0ea31a",
+      "content": "LONDON, UK, June 27, 2025 (GLOBE NEWSWIRE) -- As the cryptocurrency market continues to mature, a new wave of investor concern is emerging. With increasing market saturation and volatile price moveme… [+4449 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Kobo Libra Colour is on Sale for a limited time",
-      "description": "The Rakuten Kobo Libra Colour has been discounted by $20 in the United States.\nThe post Kobo Libra Colour is on Sale for a limited time first appeared on Good e-Reader.",
-      "publishedAt": "2025-06-27T21:28:16Z",
-      "url": "https://goodereader.com/blog/electronic-readers/kobo-libra-colour-is-on-sale-for-a-limited-time",
+      "title": "SHOCKING: technology conspiracy EXPOSED by whistleblower!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-7e34c1bc-0a9d-4820-9877-1a6d2b4fbe5a",
       "source": {
-        "name": "Goodereader"
+        "name": "Truth Seekers Daily",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T01:50:05.703Z",
+      "author": "Anonymous Whistleblower",
+      "urlToImage": "https://picsum.photos/800/600?random=1009",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "MercadoLibre, SAP, Uber Among Stocks To Watch As Shares Approach Buy Points",
-      "description": "This week's stocks to watch stretch across the consumer, technology and financial sectors.\nThe post MercadoLibre, SAP, Uber Among Stocks To Watch As Shares Approach Buy Points appeared first on Investor's Business Daily.",
-      "publishedAt": "2025-06-27T21:24:16Z",
-      "url": "https://biztoc.com/x/96144f24e6e6304b",
+      "title": "The Fantastic Four: First Steps' New Trailer Just Proved The Movie Can Nail Mister Fantastic's Powers",
+      "description": "Mister Fantastic's MCU powers look promising in the new Fantastic Four: First Steps trailer, addressing a notable issue in past adaptations.",
+      "url": "https://screenrant.com/the-fantastic-four-first-steps-trailer-mister-fantastic-powers-good/",
       "source": {
-        "name": "Biztoc.com"
+        "name": "Screen Rant",
+        "url": "https://screenrant.com/the-fantastic-four-first-steps-trailer-mister-fantastic-powers-good/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T23:20:17Z",
+      "author": "Severina Chu",
+      "urlToImage": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/06/pedro-pascal-as-reed-richards-in-front-of-an-explosion-in-fantastic-four-first-steps.jpg",
+      "content": "Marvel has released the final trailer for The Fantastic Four: First Steps, and were finally given hope that Mister Fantastics powers will look amazing in the MCU. The highly anticipated 2025 Marvel m… [+4806 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.257Z"
     },
     {
-      "title": "EXCLUSIVE: Hidden truth about major corporation revealed - You Won't Believe What Happens Next!",
-      "description": "Cultellus convoco virga usitas ait delinquo demonstro magnam. Caecus crux agnosco caste incidunt alo contabesco absens curia. This unprecedented revelation has insiders concerned. Caecus facilis repudiandae.",
-      "publishedAt": "2025-06-23T15:54:16.407Z",
-      "url": "http://exclusivereports.com/curis-alii-summopere",
+      "title": "AMD Keeps Building Momentum In AI, With Plenty Of Work Still To Do",
+      "description": "The AMD Advancing AI event showcased the company’s progress in GPUs, rack-scale systems and supporting software, but there are still some challenges to address.",
+      "url": "https://www.forbes.com/sites/patrickmoorhead/2025/06/27/amd-keeps-building-momentum-in-ai-with-plenty-of-work-still-to-do/",
       "source": {
-        "name": "Instant Update Network"
+        "name": "Forbes",
+        "url": "https://www.forbes.com/sites/patrickmoorhead/2025/06/27/amd-keeps-building-momentum-in-ai-with-plenty-of-work-still-to-do/"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:19:40Z",
+      "author": "Patrick Moorhead, Senior Contributor, \n Patrick Moorhead, Senior Contributor\n https://www.forbes.com/sites/patrickmoorhead/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/685f12b44cfc353f9fd17005/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "content": "At the AMD Advancing AI event, CEO Lisa Su touted the company's AI compute portfolio.\r\nPatrick Moorhead\r\nAt the AMD Advancing AI event in San Jose earlier this month, CEO Lisa Su and her staff showca… [+17148 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "BOMBSHELL: Tech billionaire's secret plan exposed - You Won't Believe What Happens Next!",
-      "description": "Adicio somniculosus aduro crastinus conscendo acsi carcer vox commodo. Optio infit thymbra thesaurus cras defetiscor confugo avarus vomer. This shocking revelation has officials baffled. Virgo succedo dolore natus subvenio patria tempus fugit talus officia.",
-      "publishedAt": "2025-06-28T03:29:03.465Z",
-      "url": "http://breakingalerts.com/adhaero-rerum-aestus",
+      "title": "Trump Cuts Off Trade Talks With Canada Over Digital Services Tax",
+      "description": "In what the president called a \"blatant attack\" on American tech companies, Canada's government expects to gain $3 billion from Meta, Google and others \nThe post Trump Cuts Off Trade Talks With Canada Over Digital Services Tax appeared first on TheWrap.",
+      "url": "https://www.thewrap.com/trump-cuts-canada-trade-digital-services-tax/",
       "source": {
-        "name": "Daily Flash Updates"
+        "name": "TheWrap",
+        "url": "https://www.thewrap.com/trump-cuts-canada-trade-digital-services-tax/"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:37:38Z",
+      "author": "Sean Burch",
+      "urlToImage": "https://www.thewrap.com/wp-content/uploads/2025/06/Carney-and-Trump.jpeg",
+      "content": "President Donald Trump on Friday said he was “terminating ALL discussions on Trade” with Canada over the country’s new digital services tax that aims to collect billions of dollars from American tech… [+1625 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "US Stock Market Today: S&P 500 closes at 6,173, Nasdaq reaches 20,273 as markets show growth. Details here",
-      "description": "The S&P 500 and Nasdaq closed at record highs on Friday. Despite concerns over tariffs and conflict in the Middle East, markets showed growth. Investors reacted positively to reduced tariffs and economic data.",
-      "publishedAt": "2025-06-27T21:25:56Z",
-      "url": "https://economictimes.indiatimes.com/news/international/us/us-stock-market-today-sp-500-closes-at-6173-nasdaq-reaches-20273-as-markets-show-growth-details-here/articleshow/122120111.cms",
+      "title": "Trump helped these African countries sign a peace deal. Here’s what we know",
+      "description": "DAKAR, Senegal (AP) — A deal signed in Washington on Friday has been touted as a major step toward peace in Congo following decades of conflict that has killed millions, including thousands this year. The U.S.-mediated agreement is between Rwanda and the Demo…",
+      "url": "https://financialpost.com/pmn/trump-helped-these-african-countries-sign-a-peace-deal-heres-what-we-know",
       "source": {
-        "name": "The Times of India"
+        "name": "Financial Post",
+        "url": "https://financialpost.com/pmn/trump-helped-these-african-countries-sign-a-peace-deal-heres-what-we-know"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:24:06Z",
+      "author": "The Associated Press",
+      "urlToImage": null,
+      "content": "DAKAR, Senegal (AP) A deal signed in Washington on Friday has been touted as a major step toward peace in Congo following decades of conflict that has killed millions, including thousands this year.\r… [+5039 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "S&P 500 closes at record high, marking sharp snapback after April plunge",
-      "description": "The S&P 500 and Nasdaq notched new all-time highs, buoyed by easing trade tensions and hopes for lower interest rates.",
-      "publishedAt": "2025-06-27T21:47:06Z",
-      "url": "https://www.cbsnews.com/news/today-stock-market-recrord-s-p-500-dow-nasdaq/?ftag=YHF4eb9d17",
+      "title": "Award-Winning Washington Post Editor Arrested and Charged for Possessing Child Pornography",
+      "description": "A Washington Post editor who was awarded a Pulitzer Prize for his coverage of Senate candidate Roy Moore and his alleged attraction to minor teen girls, was arrested for possessing child pornography. Thomas Pham LeGro, 48, was arrested on Thursday and made hi…",
+      "url": "https://freerepublic.com/focus/f-news/4325711/posts",
       "source": {
-        "name": "CBS News"
+        "name": "Freerepublic.com",
+        "url": "https://freerepublic.com/focus/f-news/4325711/posts"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:13:44Z",
+      "author": "Gateway Pundit,",
+      "urlToImage": null,
+      "content": "Skip to comments.\r\nAward-Winning Washington Post Editor Arrested and Charged for Possessing Child PornographyGateway Pundit, ^\r\n | Jun. 27, 2025 \r\n | Cristina Laila \r\nPosted on 06/27/2025 3:13:44 PM … [+5444 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "M3GAN 2.0 Is a Horror Sequel With No Horror",
-      "description": "M3GAN 2.0 brings its titular android back for a sequel that delivers on the comedy front, but strips M3GAN of her horror appeal.",
-      "publishedAt": "2025-06-27T21:00:14Z",
-      "url": "https://time.com/7297812/m3gan-2-0/",
+      "title": "How to Make Building Blocks for a Lunar Habitat",
+      "description": "The challenge of building habitats on the Moon is considerable, mainly because most additive manufacturing (aka. 3-D printing) techniques are not feasible. By utilizing a 3-D printing method known as light-based sintering, future missions to the Moon could ma…",
+      "url": "https://www.universetoday.com/articles/how-to-make-building-blocks-for-a-lunar-habitat",
       "source": {
-        "name": "Time"
+        "name": "Universe Today",
+        "url": "https://www.universetoday.com/articles/how-to-make-building-blocks-for-a-lunar-habitat"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:42:23Z",
+      "author": "Matthew Williams, Matthew Williams (https://www.universetoday.com/authors/houseofwilliams)",
+      "urlToImage": "https://www.universetoday.com/article_images/Future_Moon_base_20250613_010151.jpg",
+      "content": "By 2028, NASA intends to land the \"first woman and first person of color\" on the Moon as part of the Artemis III mission. This will be the first time humans have been to the lunar surface since the A… [+7881 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Spark AI (YC W24) is hiring a full-stack engineer in SF (founding team)",
-      "description": "About Us ⚡️\nJoin us to accelerate the energy transition with technology.\nAt Spark (https://sparkhq.ai/), we’re building the AI engine behind the next generation of renewable energy infrastructure. Our mission is simple yet ambitious: To help renewable energy …",
-      "publishedAt": "2025-06-27T21:01:03Z",
-      "url": "https://www.ycombinator.com/companies/spark/jobs/kDeJlPK-software-engineer-full-stack-founding-team",
+      "title": "Nissan Finally Built a NISMO Version of the Armada SUV with GT-R Engine Technology",
+      "description": "The first time the company's full-size SUV has gotten the NISMO treatment.",
+      "url": "https://hiconsumption.com/motors/2026-nissan-armada-nismo/",
       "source": {
-        "name": "Hacker News"
+        "name": "Hiconsumption.com",
+        "url": "https://hiconsumption.com/motors/2026-nissan-armada-nismo/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:14:40Z",
+      "author": "Ethan Brehm",
+      "urlToImage": "https://cdn.hiconsumption.com/wp-content/uploads/2025/06/2026-Nissan-Armada-NISMO-0-Hero.jpg",
+      "content": "The full-size performance SUV space has been heating up lately, with Cadillac’s Escalade-V setting the bar high and Ford responding with its Expedition Stealth Performance Package. Now Nissan throws … [+4419 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Racing ahead: How NetApp’s real-time data analysis fuels Ducati’s MotoGP dominance",
-      "description": "In MotoGP racing, milliseconds matter — and real-time data analysis can mean the difference between a podium finish and a lost lead. That’s why NetApp Inc. empowers Ducati Motor Holding to collect, transfer and analyze data on the fly — enabling engineers to …",
-      "publishedAt": "2025-06-27T21:21:27Z",
-      "url": "https://siliconangle.com/2025/06/27/ducati-motogp-real-time-data-analysis-performance-technology-netapp-netappintelligence/",
+      "title": "EXCLUSIVE: Celebrity reveals shocking technology secret!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-f9091def-93e6-4e8e-85d0-0c7591830515",
       "source": {
-        "name": "SiliconANGLE News"
+        "name": "Wake Up News",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-26T17:38:45.415Z",
+      "author": "Dr. Truth Seeker",
+      "urlToImage": "https://picsum.photos/800/600?random=1005",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "Nvidia could use humanoid robots to build AI servers in Foxconn's US factory - but I wonder where these robots will be built",
-      "description": "Foxconn and Nvidia may soon deploy humanoid robots in Houston to build AI servers.",
-      "publishedAt": "2025-06-27T21:24:00Z",
-      "url": "https://www.techradar.com/pro/nvidia-could-use-humanoid-robots-to-build-ai-servers-in-foxconns-us-factory-but-i-wonder-where-these-robots-will-be-built",
+      "title": "New Mobile Casinos 2025: Lotus Asia Adds New Mobile Casino Games",
+      "description": "Lotus Asia has launched new mobile casino games, including BigGame Safari, Wild Berry, Age of Spartans, and Dragon’s Cave, to enhance the adventure and thrill of online casino gaming. Lotus Asia has launched new mobile casino games, including BigGame Safari, …",
+      "url": "https://www.globenewswire.com/news-release/2025/06/27/3106877/0/en/New-Mobile-Casinos-2025-Lotus-Asia-Adds-New-Mobile-Casino-Games.html",
       "source": {
-        "name": "TechRadar"
+        "name": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/news-release/2025/06/27/3106877/0/en/New-Mobile-Casinos-2025-Lotus-Asia-Adds-New-Mobile-Casino-Games.html"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:53:00Z",
+      "author": "Lotus Asia Casino",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/b0dd1be6-fdd0-42ca-a716-3367006b56a5",
+      "content": "New York, June 27, 2025 (GLOBE NEWSWIRE) -- \r\nLotus Asia has rolled out new mobile games that celebrate innovation and creativity, curated to add excitement to an already immersive gaming library. Ea… [+5800 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "Samsung could pull a Galaxy 25 Edge with its upcoming trifold phone",
-      "description": "Samsung could unveil its much-anticipated Galaxy trifold phone in July",
-      "publishedAt": "2025-06-27T21:03:10Z",
-      "url": "https://www.androidpolice.com/samsung-galaxy-trifold-phone-at-galaxy-unpacked/",
+      "title": "State-level event marks World MSME Day 2025",
+      "description": "HT Bureau GUWAHATI, June 28: The Government of Assam celebrated World MSME Day 2025 with a state-level event aimed at promoting entrepreneurship and inclusive growth. The event was organised by the Assam Small Industries Development Corporation Ltd (ASIDC), u…",
+      "url": "https://thehillstimes.in/assam/state-level-event-marks-world-msme-day-2025",
       "source": {
-        "name": "Android Police"
+        "name": "Thehillstimes.in",
+        "url": "https://thehillstimes.in/assam/state-level-event-marks-world-msme-day-2025"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:45:00Z",
+      "author": "The Hills Times",
+      "urlToImage": "https://thehillstimes.in/wp-content/uploads/2025/06/State-level-event-marks-World-MSME-Day-2025.jpeg",
+      "content": "HT Bureau\r\nGUWAHATI, June 28: The Government of Assam celebrated World MSME Day 2025 with a state-level event aimed at promoting entrepreneurship and inclusive growth.\r\nThe event was organised by the… [+3327 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "What is Canada’s digital services tax and why is it infuriating Trump?",
-      "description": "Donald Trump abruptly cut off all trade negotiations with Canada, citing Ottawa’s Digital Services Tax for the decision. Find out more.",
-      "publishedAt": "2025-06-27T21:46:57Z",
-      "url": "https://financialpost.com/technology/canada-digital-services-tax-infuriating-donald-trump",
+      "title": "EXPOSED: The technology truth they don't want you to know!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-bc282dc2-f38f-4f78-b257-0d6c976c671c",
       "source": {
-        "name": "Financial Post"
+        "name": "Conspiracy Watch",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-24T23:33:18.401Z",
+      "author": "Former Insider",
+      "urlToImage": "https://picsum.photos/800/600?random=1000",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "How the Senate's ban on state AI regulation imperils internet access",
-      "description": "A Senate rule is pitting state AI regulation against broadband funding.",
-      "publishedAt": "2025-06-27T21:15:56Z",
-      "url": "https://www.zdnet.com/article/how-the-senates-ban-on-state-ai-regulation-imperils-internet-access/",
+      "title": "Why Ginsberg Did THAT In Mad Men Season 7 (& Everything That Led Up To It)",
+      "description": "After SCDP gets an IBM computer installed at the agency in season 7 of Mad Men, Michael Ginsberg has a complete breakdown in a tragic storyline.",
+      "url": "https://screenrant.com/mad-men-ginsberg-season-7-paranoid-what-happened/",
       "source": {
-        "name": "ZDNet"
+        "name": "Screen Rant",
+        "url": "https://screenrant.com/mad-men-ginsberg-season-7-paranoid-what-happened/"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-27T22:20:18Z",
+      "author": "Laura Kelly",
+      "urlToImage": "https://static1.srcdn.com/wordpress/wp-content/uploads/2025/06/i-ll-always-hate-this-mad-men-character.jpg",
+      "content": "Of all the upsetting character arcs in Mad Men, Michael Ginsbergs mental unraveling stands out as one of the most brutal and haunting of the critically acclaimed series. A talented copywriter for Ste… [+6836 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "LEAKED: Hidden truth about major corporation revealed - You Won't Believe What Happens Next!",
-      "description": "Aptus crinis deludo adopto earum sto vulgivagus deprimo. Capitulus versus eaque dolores aestivus cupio. This controversial revelation has insiders baffled. Vespillo tamdiu occaecati.",
-      "publishedAt": "2025-06-23T16:47:36.277Z",
-      "url": "http://newsflash365.com/cruentus-vomer-ipsam",
+      "title": "Canada's steel producers tell government its tariff protection measures aren't enough",
+      "description": "TORONTO (Reuters) -Canadian steel industry representatives told government officials in a meeting this week that their measures to protect the industry from ...",
+      "url": "https://finance.yahoo.com/news/canadas-steel-producers-tell-government-221454037.html",
       "source": {
-        "name": "TruthSeeker News"
+        "name": "Yahoo Entertainment",
+        "url": "https://finance.yahoo.com/news/canadas-steel-producers-tell-government-221454037.html"
       },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:14:54Z",
+      "author": "Divya Rajagopal and Promit Mukherjee",
+      "urlToImage": "https://media.zenfs.com/en/reuters-finance.com/a498a3e0802500f52286843a471360a4",
+      "content": "By Divya Rajagopal and Promit Mukherjee\r\nTORONTO (Reuters) -Canadian steel industry representatives told government officials in a meeting this week that their measures to protect the industry from t… [+2464 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     },
     {
-      "title": "OpenAI turns to Google's AI chips to power its products, source says",
-      "description": "The ChatGPT maker is one of the largest purchasers of Nvidia's graphics processing units (GPUs), using the AI chips to train models and also for inference...",
-      "publishedAt": "2025-06-27T21:26:22Z",
-      "url": "https://finance.yahoo.com/news/openai-turns-googles-ai-chips-212622590.html",
+      "title": "SHOCKING: technology conspiracy EXPOSED by whistleblower!",
+      "description": "Unbelievable revelations about technology that will shock you! This story has been suppressed by mainstream media for too long. The truth is finally coming out and you need to see this before it gets taken down!",
+      "url": "https://fake-news-site.net/shocking-technology-story-1a15b951-851e-4f37-85d2-87d10217a171",
       "source": {
-        "name": "Yahoo Entertainment"
+        "name": "Underground Reports",
+        "url": "https://fake-news-site.net"
       },
-      "sourceType": "real"
+      "publishedAt": "2025-06-24T09:19:14.618Z",
+      "author": "Former Insider",
+      "urlToImage": "https://picsum.photos/800/600?random=1006",
+      "content": "BREAKING NEWS: This exclusive investigation reveals shocking details about technology that the establishment doesn't want you to know! Our sources, who must remain anonymous for their safety, have provided documented evidence of a massive cover-up. Share this story before it gets censored! The mainstream media won't report on this because they're part of the conspiracy. Wake up people! The truth about technology is more shocking than you can imagine. This could change everything we thought we knew!",
+      "sourceType": "fake",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.260Z",
+      "fakeNewsIndicators": [
+        "Sensational headline with ALL CAPS",
+        "Claims of conspiracy/cover-up",
+        "Emotional language designed to provoke",
+        "Unverifiable sources",
+        "Call to action to share before censorship",
+        "Anti-establishment messaging"
+      ]
     },
     {
-      "title": "Digital Wallet Car Keys - Samsung Wallet and Mercedes-Benz Partnered for Digital Car Keys (TrendHunter.com)",
-      "description": "(TrendHunter.com) Samsung Wallet and Mercedes-Benz have announced a new partnership that will see Samsung Galaxy smartphone users able to interact with their vehicle directly from their device. The Samsung Wallet...",
-      "publishedAt": "2025-06-27T21:48:03Z",
-      "url": "https://www.trendhunter.com/trends/samsung-wallet-and-mercedesbenz",
+      "title": "Race Face Launches New Kashmoney Limited Edition Wheelsets",
+      "description": "Race Face is no stranger to custom builds, and Kashmoney is no stranger to hype. Long our most-requested color across pedals, bars, and stems, Kashmoney now shines where it spins — on our industry-proven Vault hubs with two limited-edition wheelsets. These cu…",
+      "url": "https://www.vitalmtb.com/news/press-release/race-face-launches-new-kashmoney-limited-edition-wheelsets",
       "source": {
-        "name": "Trendhunter.com"
+        "name": "Vitalmtb.com",
+        "url": "https://www.vitalmtb.com/news/press-release/race-face-launches-new-kashmoney-limited-edition-wheelsets"
       },
-      "sourceType": "real"
-    },
-    {
-      "title": "URGENT: Scientists discover impossible technology - You Won't Believe What Happens Next!",
-      "description": "Repellat cohors sit tenax delectatio dolores balbus tondeo considero. Tam quibusdam ulciscor aequus vapulus solitudo sufficio. This shocking revelation has experts speechless. Patria pecco corrumpo vivo.",
-      "publishedAt": "2025-06-23T12:44:54.364Z",
-      "url": "http://breakingalerts.com/amissio-assentator-vigor",
-      "source": {
-        "name": "TruthSeeker News"
-      },
-      "sourceType": "fake"
+      "publishedAt": "2025-06-27T22:22:03Z",
+      "author": "iceman2058",
+      "urlToImage": "https://p.vitalmtb.com/photos/press_release/139421/title_image/Kashmoney%20wheels%20homepage%20hero%20pro.jpg?VersionId=N9A7wotinW0nEWTL2iXXUq3dsHlF5AM2",
+      "content": "Race Face is no stranger to custom builds, and Kashmoney is no stranger to hype. Long our most-requested color across pedals, bars, and stems, Kashmoney now shines where it spins on our industry-prov… [+1562 chars]",
+      "sourceType": "real",
+      "topic": "technology",
+      "fetchedAt": "2025-06-28T23:26:41.259Z"
     }
   ]
 }

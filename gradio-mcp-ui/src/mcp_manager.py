@@ -3,6 +3,8 @@ MCP Manager - Handles connections to multiple MCP servers using FastMCP.
 """
 
 import asyncio
+import json
+import aiohttp
 from typing import Dict, Any, List, Optional, Tuple
 from pathlib import Path
 import logging
@@ -33,10 +35,152 @@ class MCPConfig(BaseModel):
     mcpServers: Dict[str, ServerConfig]
 
 
+class HTTPMCPClient:
+    """HTTP client for MCP servers."""
+    
+    def __init__(self, base_url: str, headers: Optional[Dict[str, str]] = None):
+        self.base_url = base_url.rstrip('/')
+        self.headers = headers or {}
+        self.session: Optional[aiohttp.ClientSession] = None
+        
+    async def __aenter__(self):
+        """Async context manager entry."""
+        self.session = aiohttp.ClientSession(
+            headers=self.headers,
+            timeout=aiohttp.ClientTimeout(total=30)
+        )
+        return self
+        
+    async def __aexit__(self, exc_type, exc_val, exc_tb):
+        """Async context manager exit."""
+        if self.session:
+            await self.session.close()
+            self.session = None
+    
+    async def _request(self, method: str, endpoint: str, data: Any = None) -> Any:
+        """Make HTTP request to the MCP server."""
+        if not self.session:
+            raise RuntimeError("Client not initialized. Use async with context manager.")
+        
+        url = f"{self.base_url}/{endpoint.lstrip('/')}"
+        
+        try:
+            async with self.session.request(
+                method, url, 
+                json=data if data else None,
+                headers={'Content-Type': 'application/json'} if data else None
+            ) as response:
+                response.raise_for_status()
+                
+                if response.content_type == 'application/json':
+                    return await response.json()
+                else:
+                    return await response.text()
+                    
+        except aiohttp.ClientError as e:
+            logger.error(f"HTTP request failed: {e}")
+            raise
+    
+    async def list_tools(self) -> List[Tool]:
+        """List available tools."""
+        try:
+            response = await self._request('GET', '/capabilities')
+            tools_data = response.get('tools', [])
+            
+            tools = []
+            for tool_data in tools_data:
+                # Create Tool object from response
+                tool = Tool(
+                    name=tool_data.get('name', ''),
+                    description=tool_data.get('description', ''),
+                    inputSchema=tool_data.get('inputSchema', {})
+                )
+                tools.append(tool)
+            
+            return tools
+        except Exception as e:
+            logger.error(f"Failed to list tools: {e}")
+            return []
+    
+    async def list_resources(self) -> List[Resource]:
+        """List available resources."""
+        try:
+            response = await self._request('GET', '/capabilities')
+            resources_data = response.get('resources', [])
+            
+            resources = []
+            for resource_data in resources_data:
+                # Create Resource object from response
+                resource = Resource(
+                    uri=resource_data.get('uri', ''),
+                    name=resource_data.get('name', ''),
+                    description=resource_data.get('description', ''),
+                    mimeType=resource_data.get('mimeType', 'text/plain')
+                )
+                resources.append(resource)
+            
+            return resources
+        except Exception as e:
+            logger.error(f"Failed to list resources: {e}")
+            return []
+    
+    async def list_prompts(self) -> List[Prompt]:
+        """List available prompts."""
+        try:
+            response = await self._request('GET', '/capabilities')
+            prompts_data = response.get('prompts', [])
+            
+            prompts = []
+            for prompt_data in prompts_data:
+                # Create Prompt object from response
+                prompt = Prompt(
+                    name=prompt_data.get('name', ''),
+                    description=prompt_data.get('description', ''),
+                    arguments=prompt_data.get('arguments', [])
+                )
+                prompts.append(prompt)
+            
+            return prompts
+        except Exception as e:
+            logger.error(f"Failed to list prompts: {e}")
+            return []
+    
+    async def call_tool(self, tool_name: str, arguments: Dict[str, Any]) -> Any:
+        """Call a tool on the server."""
+        data = {
+            "name": tool_name,
+            "arguments": arguments
+        }
+        return await self._request('POST', '/execute', data)
+    
+    async def read_resource(self, uri: str) -> Any:
+        """Read a resource from the server."""
+        # For our TypeScript servers, resources are accessed via GET requests
+        # Extract the resource path from the URI
+        resource_path = uri.replace('resource://', '')
+        return await self._request('GET', f'/resources/{resource_path}')
+    
+    async def get_prompt(self, prompt_name: str, arguments: Dict[str, Any]) -> Any:
+        """Get a prompt from the server."""
+        data = {
+            "name": prompt_name,
+            "arguments": arguments
+        }
+        return await self._request('POST', '/prompts', data)
+    
+    async def ping(self) -> bool:
+        """Ping the server."""
+        try:
+            await self._request('GET', '/health')
+            return True
+        except Exception:
+            return False
+
+
 class ServerConnection:
     """Represents a connection to a single MCP server."""
     
-    def __init__(self, name: str, config: ServerConfig, client: Client):
+    def __init__(self, name: str, config: ServerConfig, client: Any):
         self.name = name
         self.config = config
         self.client = client
@@ -60,7 +204,7 @@ class ServerConnection:
             self.prompts = await self.client.list_prompts()
             
             self.last_ping = datetime.now()
-            logger.info(f"Connected to server '{self.name}'")
+            logger.info(f"Connected to server '{self.name}' - Tools: {len(self.tools)}, Resources: {len(self.resources)}, Prompts: {len(self.prompts)}")
             return True
             
         except Exception as e:
@@ -85,9 +229,9 @@ class ServerConnection:
             return False
         
         try:
-            await self.client.ping()
+            result = await self.client.ping()
             self.last_ping = datetime.now()
-            return True
+            return result
         except Exception as e:
             logger.warning(f"Ping failed for server '{self.name}': {e}")
             return False
@@ -133,11 +277,12 @@ class MCPManager:
         
         # Create client based on configuration
         try:
-            # Build transport configuration
-            if server_config.command:
+            if server_config.url and server_config.transport == 'http':
+                # HTTP MCP server
+                client = HTTPMCPClient(server_config.url, server_config.headers)
+                logger.info(f"Created HTTP client for server '{name}' at {server_config.url}")
+            elif server_config.command:
                 # Local stdio server
-                # For FastMCP Client, we can pass the command and args directly
-                # FastMCP will infer the correct transport
                 if server_config.command == "python" and server_config.args:
                     # Pass the Python script path directly
                     client = Client(server_config.args[0])
@@ -150,9 +295,11 @@ class MCPManager:
                         "cwd": server_config.cwd
                     }
                     client = Client(transport_config)
+                logger.info(f"Created stdio client for server '{name}' with command '{server_config.command}'")
             elif server_config.url:
-                # Remote HTTP/SSE server
+                # Try FastMCP client for other URL types
                 client = Client(server_config.url)
+                logger.info(f"Created FastMCP client for server '{name}' at {server_config.url}")
             else:
                 raise ValueError(f"Server '{name}' has no command or URL specified")
             
@@ -165,14 +312,17 @@ class MCPManager:
                 for handler in self._log_handlers:
                     await handler(name, message)
             
-            # Configure client handlers
-            if hasattr(client, 'log_handler'):
+            # Configure client handlers (only for FastMCP clients)
+            if hasattr(client, 'log_handler') and not isinstance(client, HTTPMCPClient):
                 client.log_handler = log_handler
             
             # Connect
             success = await connection.connect()
             if success:
                 self.servers[name] = connection
+                logger.info(f"Successfully connected to server '{name}'")
+            else:
+                logger.error(f"Failed to connect to server '{name}': {connection.last_error}")
             
             return success
             
