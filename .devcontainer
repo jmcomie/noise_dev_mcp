@@ -1,0 +1,5 @@
+{
+  "name": "setup",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.12",
+  "postCreateCommand": "make"
+}
