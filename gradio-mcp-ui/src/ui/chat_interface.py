@@ -164,7 +164,7 @@ class ChatInterface:
                     🤖 MCP Multi-Server Command Center
                 </h1>
                 <p style="margin: 0.5rem 0 0 0; font-size: 1.2rem; opacity: 0.9;">
-                    Professional interface for Model Context Protocol servers with news dataset testing
+                    Model Context Protocol servers with news dataset testing
                 </p>
                 <div style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
                     Connect • Chat • Execute Tools • Test News Datasets • Monitor Performance
