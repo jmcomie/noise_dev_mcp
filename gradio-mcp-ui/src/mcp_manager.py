@@ -85,7 +85,21 @@ class HTTPMCPClient:
         """List available tools."""
         try:
             response = await self._request('GET', '/capabilities')
-            tools_data = response.get('tools', [])
+            
+            # Handle different response formats
+            tools_data = []
+            if 'tools' in response:
+                # Standard MCP format
+                tools_data = response['tools']
+            elif 'available_tools' in response:
+                # Our TypeScript server format
+                available_tools = response['available_tools']
+                for tool_name, tool_info in available_tools.items():
+                    tools_data.append({
+                        'name': tool_name,
+                        'description': tool_info.get('description', ''),
+                        'inputSchema': tool_info.get('inputSchema', {})
+                    })
             
             tools = []
             for tool_data in tools_data:
@@ -106,7 +120,22 @@ class HTTPMCPClient:
         """List available resources."""
         try:
             response = await self._request('GET', '/capabilities')
-            resources_data = response.get('resources', [])
+            
+            # Handle different response formats
+            resources_data = []
+            if 'resources' in response:
+                # Standard MCP format
+                resources_data = response['resources']
+            elif 'available_resources' in response:
+                # Our TypeScript server format
+                available_resources = response['available_resources']
+                for resource_key, resource_info in available_resources.items():
+                    resources_data.append({
+                        'uri': resource_info.get('uri', ''),
+                        'name': resource_info.get('name', ''),
+                        'description': f"Resource: {resource_info.get('name', '')}",
+                        'mimeType': 'text/plain'
+                    })
             
             resources = []
             for resource_data in resources_data:
@@ -128,7 +157,21 @@ class HTTPMCPClient:
         """List available prompts."""
         try:
             response = await self._request('GET', '/capabilities')
-            prompts_data = response.get('prompts', [])
+            
+            # Handle different response formats
+            prompts_data = []
+            if 'prompts' in response:
+                # Standard MCP format
+                prompts_data = response['prompts']
+            elif 'available_prompts' in response:
+                # Our TypeScript server format
+                available_prompts = response['available_prompts']
+                for prompt_name, prompt_info in available_prompts.items():
+                    prompts_data.append({
+                        'name': prompt_name,
+                        'description': prompt_info.get('description', ''),
+                        'arguments': prompt_info.get('arguments', [])
+                    })
             
             prompts = []
             for prompt_data in prompts_data:
