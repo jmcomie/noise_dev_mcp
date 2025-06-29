@@ -12,29 +12,29 @@ mcpServers:
     category: "example"
     specialties: ["math", "dice", "time", "text", "basic"]
   
-  # MCPServer1 - Primary General Purpose Server
-  mcpserver1:
+  # NewsServer - Primary General Purpose Server
+  NewsServer:
     url: http://localhost:3000/api/v1
     transport: http
-    description: "MCPServer1 - Primary general purpose server with OpenAI integration for complex AI tasks"
+    description: "NewsServer - Primary general purpose server with OpenAI integration for complex AI tasks and news analysis"
     category: "production"
     capabilities: ["chat", "tools", "resources", "prompts"]
-    specialties: ["general", "math", "utility", "openai", "ai", "creative", "analysis"]
+    specialties: ["general", "math", "utility", "openai", "ai", "creative", "analysis", "news"]
   
-  # MCPServer2 - Military & Defense Specialized Server  
-  mcpserver2:
+  # MilitaryServer - Military & Defense Specialized Server  
+  MilitaryServer:
     url: http://localhost:3001/api/v1
     transport: http
-    description: "MCPServer2-Defense - Military and defense specialization with combat simulation and weapon analysis"
+    description: "MilitaryServer - Military and defense specialization with combat simulation and weapon analysis"
     category: "specialized"
     capabilities: ["chat", "tools", "resources", "prompts"]
     specialties: ["military", "defense", "combat", "weapons", "tactics", "security", "simulation"]
   
-  # MCPServer3 - Civil Government Specialized Server
-  mcpserver3:
+  # GovernmentServer - Civil Government Specialized Server
+  GovernmentServer:
     url: http://localhost:3002/api/v1
     transport: http
-    description: "MCPServer3-CivGov - Civil government specialization with policy analysis and public services"
+    description: "GovernmentServer - Civil government specialization with policy analysis and public services"
     category: "specialized"
     capabilities: ["chat", "tools", "resources", "prompts"]
     specialties: ["government", "policy", "public", "regulation", "civic", "administration", "services"]

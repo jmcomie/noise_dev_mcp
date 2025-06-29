@@ -139,9 +139,9 @@ class ChatInterface:
         # Create mapping between display names and technical names
         self.server_display_mapping = {
             "Example Server": "example",
-            "News Server": "news_server", 
-            "Military Server": "military_server",
-            "Government Server": "government_server"
+            "NewsServer": "NewsServer", 
+            "MilitaryServer": "MilitaryServer",
+            "GovernmentServer": "GovernmentServer"
         }
         
         # Reverse mapping for technical to display names
@@ -516,7 +516,7 @@ class ChatInterface:
                     
                     # Mathematical operations - prefer servers with math tools
                     if any(word in message_lower for word in ['calculate', 'add', 'subtract', 'multiply', 'divide', 'math', 'equation', 'formula']):
-                        if 'news_server' in server_name or 'example' in server_name:
+                        if 'NewsServer' in server_name or 'example' in server_name:
                             score += 30
                             reasons.append("Mathematical operations detected - primary math server")
                         else:
@@ -525,7 +525,7 @@ class ChatInterface:
                     
                     # News operations - News Server specialization
                     if any(word in message_lower for word in ['news', 'article', 'headline', 'report', 'journalism', 'media', 'press', 'story', 'publication', 'breaking', 'update']):
-                        if 'news_server' in server_name:
+                        if 'NewsServer' in server_name:
                             score += 40
                             reasons.append("News query - specialized news server with AI analysis")
                         else:
@@ -534,7 +534,7 @@ class ChatInterface:
                     
                     # Military/Defense operations - Military Server specialization
                     if any(word in message_lower for word in ['military', 'defense', 'combat', 'weapon', 'tactical', 'strategy', 'war', 'army', 'navy', 'force', 'mission', 'operation', 'security', 'threat']):
-                        if 'military_server' in server_name:
+                        if 'MilitaryServer' in server_name:
                             score += 40
                             reasons.append("Military/Defense query - specialized military server")
                         else:
@@ -543,7 +543,7 @@ class ChatInterface:
                     
                     # Civil Government operations - Government Server specialization
                     if any(word in message_lower for word in ['government', 'policy', 'public', 'regulation', 'civic', 'administration', 'law', 'legal', 'citizen', 'service', 'bureau', 'department', 'federal', 'state']):
-                        if 'government_server' in server_name:
+                        if 'GovernmentServer' in server_name:
                             score += 40
                             reasons.append("Civil Government query - specialized government server")
                         else:
@@ -575,7 +575,7 @@ class ChatInterface:
                     
                     # Complex AI/OpenAI operations
                     if any(word in message_lower for word in ['analyze', 'explain', 'generate', 'creative', 'story', 'summary', 'ai']):
-                        if 'news_server' in server_name:
+                        if 'NewsServer' in server_name:
                             score += 35
                             reasons.append("AI/Creative task - primary OpenAI-integrated server")
                         else:
@@ -584,7 +584,7 @@ class ChatInterface:
                     
                     # Load balancing - prefer appropriate servers for general queries
                     if not any(word in message_lower for word in ['calculate', 'time', 'random', 'dice', 'ai', 'generate', 'military', 'defense', 'government', 'policy', 'news']):
-                        if 'news_server' in server_name:
+                        if 'NewsServer' in server_name:
                             score += 15
                             reasons.append("General query - primary general purpose server")
                         elif 'example' in server_name:
